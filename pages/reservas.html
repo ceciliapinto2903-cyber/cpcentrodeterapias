@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ── SEO Principal ── -->
+  <title>Reservas | CP Centro de Terapias — Marque a Sua Sessão</title>
+  <meta name="description" content="Reserve a sua sessão de massagem em Santa Maria da Feira ou Esmoriz. Resposta o mais rápido possível.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cpterapias.pt/pages/reservas.html">
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://cpterapias.pt/pages/reservas.html">
+  <meta property="og:title"       content="Reservas | CP Centro de Terapias — Marque a Sua Sessão">
+  <meta property="og:description" content="Reserve a sua sessão de massagem em Santa Maria da Feira ou Esmoriz. Resposta o mais rápido possível.">
+  <meta property="og:image"       content="https://cpterapias.pt/imagens/logos/logomarca.png">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!-- ── Tipografia: Cormorant Garamond + Jost ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- ── Bootstrap 5.3.3 ── -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- ── Bootstrap Icons 1.11.3 ── -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- ── CSS Global do Site ── -->
+  <link rel="stylesheet" href="../assets/css/estilo.css">
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════════
+       SKIP LINK — Acessibilidade WCAG 2.4.1
+  ════════════════════════════════════════════════════════ -->
+  <a class="skip-link" href="#conteudo-principal"><span data-i18n="comum.saltar_conteudo">Saltar para o conteúdo</span></a>
+
+  <!-- ════════════════════════════════════════════════════════
+       COOKIE BANNER RGPD — Lógica em js/main.js (initCookieBanner)
+  ════════════════════════════════════════════════════════ -->
+  <div id="cookie-banner" role="dialog" aria-modal="true"
+       aria-label="Aviso de cookies e privacidade"
+       aria-describedby="cookie-descricao">
+    <p class="cookie-texto" id="cookie-descricao">
+      <strong data-i18n="cookie.aviso_forte">Este site utiliza cookies estritamente necessários</strong>
+      <span data-i18n="cookie.aviso_meio">para o seu funcionamento. Ao continuar, aceita a nossa</span>
+      <a href="../politica-privacidade.html"><span data-i18n="cookie.politica">Política de Privacidade</span></a>
+      <span data-i18n="cookie.e_os_nossos">e os nossos</span> <a href="../termos-utilizacao.html"><span data-i18n="cookie.termos">Termos de Utilização</span></a>,
+      <span data-i18n="cookie.rgpd_fim">em conformidade com o RGPD.</span>
+    </p>
+    <div class="cookie-acoes">
+      <button class="btn-cookie-rejeitar" id="btn-rejeitar" aria-label="Recusar cookies">
+        <span data-i18n="cookie.recusar">Recusar</span>
+      </button>
+      <button class="btn-cookie-aceitar" id="btn-aceitar" aria-label="Aceitar cookies e fechar aviso">
+        <i class="bi bi-check2 me-1" aria-hidden="true"></i><span data-i18n="cookie.aceitar">Aceitar e continuar</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       BARRA TOPO — Presença e contacto rápido
+  ════════════════════════════════════════════════════════ -->
+  <div class="barra-topo" role="complementary" aria-label="Informação de contacto">
+    <span class="barra-topo-item">
+      <i class="bi bi-geo-alt" aria-hidden="true"></i>
+      <strong data-i18n="topo.local1">Santa Maria da Feira</strong> &amp; <strong data-i18n="topo.local2">Esmoriz</strong>
+    </span>
+    <span class="barra-topo-item">
+      <i class="bi bi-clock" aria-hidden="true"></i>
+      <span data-i18n="topo.dias">Terça a Sábado</span> &nbsp;·&nbsp; <strong data-i18n="topo.horas">10h00 – 19h00</strong>
+    </span>
+    <span class="barra-topo-item">
+      <i class="bi bi-calendar-check" aria-hidden="true"></i>
+      <span data-i18n="topo.confirmacao">Confirmação</span> <strong data-i18n="topo.confirmacao_valor">rápida</strong>
+    </span>
+    <span class="barra-topo-item">
+      <a href="tel:+351939627962" aria-label="Ligar para +351 939 627 962">
+        <i class="bi bi-telephone" aria-hidden="true"></i>
+        +351 939 627 962
+      </a>
+    </span>
+    <span class="barra-topo-item">
+      <a href="https://wa.me/351939627962" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        <span data-i18n="topo.whatsapp_disponivel">WhatsApp disponível</span>
+      </a>
+    </span>
+    <span class="barra-topo-item">
+      <i class="bi bi-heart" aria-hidden="true"></i>
+      <span data-i18n="topo.tagline">Massagens terapêuticas &amp; bem-estar</span>
+    </span>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       NAVBAR — Glassmorphism + sticky
+       Classe .scrolled adicionada por JS (main.js initNavbarScroll)
+  ════════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container">
+
+        <!-- Logótipo -->
+        <a class="navbar-brand" href="../index.html" aria-label="CP Centro de Terapias — página inicial">
+          <img src="../assets/images/logos/logomarca-cp-centro-terapias.png"
+               alt="CP Centro de Terapias e Bem-Estar"
+               width="auto" height="62">
+        </a>
+
+        <!-- Toggle mobile -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-principal"
+                aria-controls="menu-principal"
+                aria-expanded="false"
+                aria-label="Abrir ou fechar menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links de navegação -->
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto align-items-center gap-1">
+            <li class="nav-item"><a class="nav-link" href="../index.html"><span data-i18n="nav.inicio">Início</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre-mim.html"><span data-i18n="nav.sobre">Sobre mim</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="nosso-espaco.html"><span data-i18n="nav.espaco">Espaço</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="servicos.html"><span data-i18n="nav.servicos">Serviços</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="precos.html"><span data-i18n="nav.precos">Preços</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html"><span data-i18n="nav.blog">Blog</span></a></li>
+            <li class="nav-item"><a class="nav-link ativo" aria-current="page" href="reservas.html"><span data-i18n="nav.reservas">Reservas</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="cartao-presente.html"><i class="bi bi-gift me-1" aria-hidden="true"></i><span data-i18n="nav.cartao_presente">Cartão-Presente</span></a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link btn-nav-cta" href="contactos.html">
+                <i class="bi bi-envelope me-1" aria-hidden="true"></i><span data-i18n="nav.contactos">Contactos</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown ms-lg-2">
+              <a class="nav-link dropdown-toggle seletor-idioma-toggle" href="#" role="button"
+                 data-bs-toggle="dropdown" aria-expanded="false" aria-label="Escolher idioma / Choose language / Elegir idioma">
+                <i class="bi bi-globe2 me-1" aria-hidden="true"></i><span class="seletor-idioma-atual">PT</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end seletor-idioma-menu">
+                <li><button class="dropdown-item seletor-idioma-btn ativo" data-idioma="pt" type="button" aria-current="true">
+                  <span class="bandeira">🇵🇹</span> Português</button></li>
+                <li><button class="dropdown-item seletor-idioma-btn" data-idioma="es" type="button" aria-current="false">
+                  <span class="bandeira">🇪🇸</span> Español</button></li>
+                <li><button class="dropdown-item seletor-idioma-btn" data-idioma="en" type="button" aria-current="false">
+                  <span class="bandeira">🇬🇧</span> English</button></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+<!-- Cabeçalho da página -->
+  <section class="py-4 bg-light border-bottom" id="conteudo-principal">
+    <div class="container">
+      <nav aria-label="Localização na página">
+        <ol class="breadcrumb mb-1 small">
+          <li class="breadcrumb-item"><a href="../index.html" data-i18n="nav.inicio">Início</a></li>
+          <li class="breadcrumb-item active" aria-current="page" data-i18n="nav.reservas">Reservas</li>
+        </ol>
+      </nav>
+      <h1 class="titulo-secao mb-1 u16" data-i18n="reservas.titulo">Reserva a tua Sessão</h1>
+    </div>
+  </section>
+
+
+  <!-- Faixa de aviso -->
+  <div class="faixa-aviso" role="alert">
+    <i class="bi bi-clock-fill me-2"></i>
+    <span data-i18n="reservas.aviso_confirmacao">As reservas são confirmadas por e-mail assim que possível.</span>
+  </div>
+
+
+  <!-- FORMULÁRIO DE RESERVA -->
+  <section class="py-5" aria-label="Formulário de reserva de sessão">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+
+        <!-- Coluna esquerda: passos e contacto alternativo -->
+        <div class="col-lg-4 fade-in">
+          <h2 class="h5 mb-4 u17" data-i18n="reservas.como_funciona">Como funciona?</h2>
+
+          <!-- Passo 1 -->
+          <div class="d-flex gap-3 mb-4">
+            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold flex-shrink-0 u22"
+                >
+              1
+            </div>
+            <div>
+              <p class="fw-semibold mb-1" data-i18n="reservas.passo1_titulo">Preenche o formulário</p>
+              <p class="small text-muted mb-0" data-i18n="reservas.passo1_desc">Indica o serviço, a data preferida e os teus contactos.</p>
+            </div>
+          </div>
+
+          <!-- Passo 2 -->
+          <div class="d-flex gap-3 mb-4">
+            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold flex-shrink-0 u22"
+                >
+              2
+            </div>
+            <div>
+              <p class="fw-semibold mb-1" data-i18n="reservas.passo2_titulo">Confirmo a disponibilidade</p>
+              <p class="small text-muted mb-0" data-i18n="reservas.passo2_desc">Receves uma resposta por e-mail assim que possível.</p>
+            </div>
+          </div>
+
+          <!-- Passo 3 -->
+          <div class="d-flex gap-3 mb-5">
+            <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold flex-shrink-0 u22"
+                >
+              3
+            </div>
+            <div>
+              <p class="fw-semibold mb-1" data-i18n="reservas.passo3_titulo">Apareces e relaxas</p>
+              <p class="small text-muted mb-0" data-i18n="reservas.passo3_desc">Chega com roupa confortável. Tratamos de tudo o resto.</p>
+            </div>
+          </div>
+
+          <!-- Contacto alternativo -->
+          <div class="card p-3 u66">
+            <p class="small fw-semibold mb-1" data-i18n="reservas.preferes_ligar">Preferes ligar ou escrever?</p>
+            <p class="small mb-1">
+              <i class="bi bi-telephone-fill me-2 u09"></i>
+              <a href="tel:+351939627962" class="text-decoration-none u11">+351 939 627 962</a>
+            </p>
+            <p class="small mb-1">
+              <i class="bi bi-whatsapp me-2 u67"></i>
+              <a href="https://wa.me/351939627962" target="_blank" rel="noopener"
+                 class="text-decoration-none u11">WhatsApp</a>
+            </p>
+            <p class="small mb-0">
+              <i class="bi bi-envelope-fill me-2 u09"></i>
+              <a href="mailto:cp.centrodeterapiadobemestar@gmail.com"
+                 class="text-decoration-none u11">
+                cp.centrodeterapiadobemestar@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Coluna direita: formulário -->
+        <div class="col-lg-8 fade-in">
+          <!-- Formulário processado pelo Netlify Forms — sem serviço externo -->
+          <form class="caixa-formulario"
+                name="reservas"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="empresa"
+                novalidate>
+            <input type="hidden" name="form-name" value="reservas">
+            <p class="d-none"><label>Não preencher: <input name="empresa"></label></p>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="nome" class="form-label fw-semibold" data-i18n="reservas.nome_completo">Nome completo</label>
+                <input type="text" id="nome" name="nome" class="form-control"
+                       placeholder="O teu nome" data-i18n-placeholder="reservas.nome_placeholder" required>
+              </div>
+              <div class="col-md-6">
+                <label for="telefone" class="form-label fw-semibold">
+                  <span data-i18n="form.telefone_label">Telefone</span> <span class="text-muted fw-normal" data-i18n="form.opcional">(opcional)</span>
+                </label>
+                <input type="tel" id="telefone" name="telefone" class="form-control"
+                       placeholder="+351 900 000 000">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold" data-i18n="form.email_label">E-mail</label>
+              <input type="email" id="email" name="email" class="form-control"
+                     placeholder="email@exemplo.com" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="massagem" class="form-label fw-semibold" data-i18n="form.tipo_massagem_label">Tipo de massagem</label>
+              <select id="massagem" name="massagem" class="form-select" required>
+                <option value="" disabled selected data-i18n="reservas.escolhe_servico">Escolhe um serviço…</option>
+                <option value="aromaterapia" data-i18n="reservas.opcao_aromaterapia">Massagem com Aromaterapia (60–90 min)</option>
+                <option value="miofascial" data-i18n="reservas.opcao_miofascial">Libertação Miofascial (45–60 min)</option>
+                <option value="ayurvedica" data-i18n="reservas.opcao_ayurvedica">Massagem Ayurvédica (75–90 min)</option>
+                <option value="relaxante-classica" data-i18n="reservas.opcao_classica">Massagem Relaxante Clássica (60–90 min)</option>
+                <option value="lomi-lomi" data-i18n="reservas.opcao_lomilomi">Lomi-Lomi (75–90 min)</option>
+                <option value="shiatsu" data-i18n="reservas.opcao_shiatsu">Shiatsu (60 min)</option>
+                <option value="reflexologia" data-i18n="reservas.opcao_reflexologia">Reflexologia (30–45 min)</option>
+                <option value="reiki" data-i18n="reservas.opcao_reiki">Reiki (45–60 min)</option>
+                <option value="facial" data-i18n="reservas.opcao_facial">Limpeza e Hidratação de Rosto (45 min)</option>
+                <option value="lifting" data-i18n="reservas.opcao_lifting">Lifting Facial (Massagem de Rosto)</option>
+                <option value="esfoliacao" data-i18n="reservas.opcao_esfoliacao">Esfoliação e Hidratação Corporal (50 min)</option>
+                <option value="criancas" data-i18n="reservas.opcao_criancas">Massagem em Crianças (30 min)</option>
+              </select>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="data" class="form-label fw-semibold" data-i18n="form.data_label">Data preferida</label>
+                <input type="date" id="data" name="data" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label for="hora" class="form-label fw-semibold">
+                  <span data-i18n="reservas.hora_preferida">Hora preferida</span> <span class="text-muted fw-normal" data-i18n="form.opcional">(opcional)</span>
+                </label>
+                <select id="hora" name="hora" class="form-select">
+                  <option value="" data-i18n="reservas.sem_preferencia">Sem preferência</option>
+                  <option>09:00</option>
+                  <option>10:00</option>
+                  <option>11:00</option>
+                  <option>14:00</option>
+                  <option>15:00</option>
+                  <option>16:00</option>
+                  <option>17:00</option>
+                  <option>18:00</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for="mensagem" class="form-label fw-semibold">
+                <span data-i18n="form.mensagem_label">Mensagem</span> <span class="text-muted fw-normal" data-i18n="form.opcional">(opcional)</span>
+              </label>
+              <textarea id="mensagem" name="mensagem" class="form-control" rows="3"
+                        placeholder="Dores específicas, alergias a óleos, ou qualquer informação útil…" data-i18n-placeholder="reservas.mensagem_placeholder"></textarea>
+            </div>
+
+            <div class="form-check mb-4">
+              <input type="checkbox" class="form-check-input" id="consentimento-saude" name="consentimento-saude" value="sim" required>
+              <label class="form-check-label small" for="consentimento-saude">
+                <span data-i18n="reservas.consentimento_saude">Autorizo o tratamento dos dados de saúde que possa incluir nesta mensagem (ex. dores específicas, alergias), nos termos do artigo 9.º do RGPD, exclusivamente para preparar a minha sessão de forma segura e adequada.</span>
+                <span data-i18n="reservas.consultar">Consulto a</span> <a href="../politica-privacidade.html" target="_blank" rel="noopener noreferrer"><span data-i18n="cookie.politica">Política de Privacidade</span></a>.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-3 fw-semibold fs-5">
+              <i class="bi bi-send me-2"></i><span data-i18n="form.enviar_pedido">Enviar pedido de reserva</span>
+            </button>
+
+            <p class="text-muted small text-center mt-3 mb-0">
+              <i class="bi bi-lock-fill me-1"></i>
+              <span data-i18n="reservas.privacidade_nota">Os teus dados são usados apenas para confirmar a reserva e nunca são partilhados.</span>
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       RODAPÉ — 4 colunas + copyright + links legais RGPD
+  ════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Coluna 1: Marca + redes sociais -->
+        <div class="col-lg-4">
+          <img src="../assets/images/logos/logomarca-cp-centro-terapias.png"
+               alt="CP Centro de Terapias e Bem-Estar"
+               class="footer-logo" width="auto" height="54">
+          <p class="footer-desc">
+            <span data-i18n="footer.desc_intro">Centro de Terapias e Bem-Estar em</span>
+            <strong class="u01"><span data-i18n="topo.local1">Santa Maria da Feira</span></strong>
+            <span data-i18n="footer.e">e</span>
+            <strong class="u01"><span data-i18n="topo.local2">Esmoriz</span></strong>.
+            <span data-i18n="footer.desc_fim">Sessões personalizadas de massagem terapêutica, holística e de relaxamento.</span>
+          </p>
+          <nav class="social-wrap" aria-label="Redes sociais">
+            <a href="https://www.facebook.com/profile.php?id=61572165418991"
+               class="social-btn" target="_blank" rel="noopener noreferrer"
+               aria-label="Visitar o Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/cp.centrodeterapiadobemestar/"
+               class="social-btn" target="_blank" rel="noopener noreferrer"
+               aria-label="Visitar o Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/351939627962"
+               class="social-btn" target="_blank" rel="noopener noreferrer"
+               aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          </nav>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div class="col-lg-2 col-6">
+          <p class="footer-col-title"><span data-i18n="footer.paginas">Páginas</span></p>
+          <ul class="footer-nav" role="list">
+            <li><a href="../index.html"><span data-i18n="nav.inicio">Início</span></a></li>
+            <li><a href="sobre-mim.html"><span data-i18n="nav.sobre">Sobre mim</span></a></li>
+            <li><a href="nosso-espaco.html"><span data-i18n="footer.o_espaco">O espaço</span></a></li>
+            <li><a href="servicos.html"><span data-i18n="nav.servicos">Serviços</span></a></li>
+            <li><a href="precos.html"><span data-i18n="nav.precos">Preços</span></a></li>
+            <li><a href="blog.html"><span data-i18n="nav.blog">Blog</span></a></li>
+            <li><a href="reservas.html"><span data-i18n="nav.reservas">Reservas</span></a></li>
+            <li><a href="cartao-presente.html"><span data-i18n="nav.cartao_presente">Cartão-Presente</span></a></li>
+            <li><a href="contactos.html"><span data-i18n="nav.contactos">Contactos</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Serviços -->
+        <div class="col-lg-2 col-6">
+          <p class="footer-col-title"><span data-i18n="nav.servicos">Serviços</span></p>
+          <ul class="footer-nav" role="list">
+            <li><a href="servicos.html#aromaterapia"><span data-i18n="servicos_nomes.aromaterapia">Aromaterapia</span></a></li>
+            <li><a href="servicos.html#miofascial"><span data-i18n="servicos_nomes.miofascial">Miofascial</span></a></li>
+            <li><a href="servicos.html#ayurvedica"><span data-i18n="servicos_nomes.ayurvedica">Ayurvédica</span></a></li>
+            <li><a href="servicos.html#lomi-lomi"><span data-i18n="servicos_nomes.lomilomi">Lomi-Lomi</span></a></li>
+            <li><a href="servicos.html#shiatsu"><span data-i18n="servicos_nomes.shiatsu">Shiatsu</span></a></li>
+            <li><a href="servicos.html#reflexologia"><span data-i18n="servicos_nomes.reflexologia">Reflexologia</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Contacto -->
+        <div class="col-lg-4">
+          <p class="footer-col-title"><span data-i18n="footer.contacto">Contacto</span></p>
+          <address class="u04">
+            <div class="footer-info">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              <span><span data-i18n="footer.morada1">Santa Maria da Feira, Aveiro</span></span>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <span><span data-i18n="footer.morada2">Esmoriz, Ovar, Aveiro</span></span>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+              <a href="https://wa.me/351939627962">+351 939 627 962</a>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+              <a href="mailto:cp.centrodeterapiadobemestar@gmail.com">cp.centrodeterapiadobemestar@gmail.com</a>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-clock-fill" aria-hidden="true"></i>
+              <span><span data-i18n="footer.horario">Seg – Sáb &nbsp;·&nbsp; 10h00 – 18h00</span></span>
+            </div>
+          </address>
+          <div class="mt-4">
+            <a class="btn-p u05" href="reservas.html"
+              
+               aria-label="Reservar sessão">
+              <i class="bi bi-calendar-check me-1" aria-hidden="true"></i><span data-i18n="comum.reservar_sessao">Reservar sessão</span>
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /row colunas -->
+
+      <hr>
+
+      <!-- Copyright + Links legais RGPD -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <time datetime="2026">2026</time>
+          <span data-i18n="footer.marca">CP — Centro de Terapias e Bem-Estar</span>. <span data-i18n="footer.direitos">Todos os direitos reservados.</span>
+        </p>
+        <nav class="footer-legais" aria-label="Links legais RGPD">
+          <a href="../politica-privacidade.html"><span data-i18n="cookie.politica">Política de Privacidade</span></a>
+          <a href="../termos-utilizacao.html"><span data-i18n="cookie.termos">Termos de Utilização</span></a>
+          <a href="contactos.html">Contactos</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════════════════
+       BOTÃO VOLTAR AO TOPO
+  ════════════════════════════════════════════════════════ -->
+  <button type="button" id="btn-topo" class="btn-topo" aria-label="Voltar ao topo da página">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ════════════════════════════════════════════════════════
+       BOTÃO WHATSAPP FLUTUANTE
+  ════════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/351939627962"
+     class="btn-wa"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar pelo WhatsApp — abre numa nova janela" data-i18n-aria="comum.whatsapp_flutuante">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- ════════════════════════════════════════════════════════
+       SCRIPTS — Bootstrap 5.3.3 + JS Global do Site
+  ════════════════════════════════════════════════════════ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/i18n-dict.js"></script>
+  <script src="../assets/js/i18n.js"></script>
+
+</body>
+</html>

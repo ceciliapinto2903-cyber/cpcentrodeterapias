@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ── SEO Principal ── -->
+  <title>Blog & Bem-Estar | CP Centro de Terapias</title>
+  <meta name="description" content="Artigos sobre massagens terapêuticas, bem-estar, saúde e relaxamento. Dicas práticas da CP Centro de Terapias.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cpterapias.pt/pages/blog.html">
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://cpterapias.pt/pages/blog.html">
+  <meta property="og:title"       content="Blog & Bem-Estar | CP Centro de Terapias">
+  <meta property="og:description" content="Artigos sobre massagens terapêuticas, bem-estar, saúde e relaxamento. Dicas práticas da CP Centro de Terapias.">
+  <meta property="og:image"       content="https://cpterapias.pt/imagens/logos/logomarca.png">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!-- ── Tipografia: Cormorant Garamond + Jost ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- ── Bootstrap 5.3.3 ── -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- ── Bootstrap Icons 1.11.3 ── -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- ── CSS Global do Site ── -->
+  <link rel="stylesheet" href="../assets/css/estilo.css">
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════════
+       SKIP LINK — Acessibilidade WCAG 2.4.1
+  ════════════════════════════════════════════════════════ -->
+  <a class="skip-link" href="#conteudo-principal"><span data-i18n="comum.saltar_conteudo">Saltar para o conteúdo</span></a>
+
+  <!-- ════════════════════════════════════════════════════════
+       COOKIE BANNER RGPD — Lógica em js/main.js (initCookieBanner)
+  ════════════════════════════════════════════════════════ -->
+  <div id="cookie-banner" role="dialog" aria-modal="true"
+       aria-label="Aviso de cookies e privacidade"
+       aria-describedby="cookie-descricao">
+    <p class="cookie-texto" id="cookie-descricao">
+      <strong data-i18n="cookie.aviso_forte">Este site utiliza cookies estritamente necessários</strong>
+      <span data-i18n="cookie.aviso_meio">para o seu funcionamento. Ao continuar, aceita a nossa</span>
+      <a href="../politica-privacidade.html"><span data-i18n="cookie.politica">Política de Privacidade</span></a>
+      <span data-i18n="cookie.e_os_nossos">e os nossos</span> <a href="../termos-utilizacao.html"><span data-i18n="cookie.termos">Termos de Utilização</span></a>,
+      <span data-i18n="cookie.rgpd_fim">em conformidade com o RGPD.</span>
+    </p>
+    <div class="cookie-acoes">
+      <button class="btn-cookie-rejeitar" id="btn-rejeitar" aria-label="Recusar cookies">
+        <span data-i18n="cookie.recusar">Recusar</span>
+      </button>
+      <button class="btn-cookie-aceitar" id="btn-aceitar" aria-label="Aceitar cookies e fechar aviso">
+        <i class="bi bi-check2 me-1" aria-hidden="true"></i><span data-i18n="cookie.aceitar">Aceitar e continuar</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       BARRA TOPO — Presença e contacto rápido
+  ════════════════════════════════════════════════════════ -->
+  <div class="barra-topo" role="complementary" aria-label="Informação de contacto">
+    <span class="barra-topo-item">
+      <i class="bi bi-geo-alt" aria-hidden="true"></i>
+      <strong data-i18n="topo.local1">Santa Maria da Feira</strong> &amp; <strong data-i18n="topo.local2">Esmoriz</strong>
+    </span>
+    <span class="barra-topo-item">
+      <i class="bi bi-clock" aria-hidden="true"></i>
+      <span data-i18n="topo.dias">Terça a Sábado</span> &nbsp;·&nbsp; <strong data-i18n="topo.horas">10h00 – 19h00</strong>
+    </span>
+    <span class="barra-topo-item">
+      <i class="bi bi-calendar-check" aria-hidden="true"></i>
+      <span data-i18n="topo.confirmacao">Confirmação</span> <strong data-i18n="topo.confirmacao_valor">rápida</strong>
+    </span>
+    <span class="barra-topo-item">
+      <a href="tel:+351939627962" aria-label="Ligar para +351 939 627 962">
+        <i class="bi bi-telephone" aria-hidden="true"></i>
+        +351 939 627 962
+      </a>
+    </span>
+    <span class="barra-topo-item">
+      <a href="https://wa.me/351939627962" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        <span data-i18n="topo.whatsapp_disponivel">WhatsApp disponível</span>
+      </a>
+    </span>
+    <span class="barra-topo-item">
+      <i class="bi bi-heart" aria-hidden="true"></i>
+      <span data-i18n="topo.tagline">Massagens terapêuticas &amp; bem-estar</span>
+    </span>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       NAVBAR — Glassmorphism + sticky
+       Classe .scrolled adicionada por JS (main.js initNavbarScroll)
+  ════════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container">
+
+        <!-- Logótipo -->
+        <a class="navbar-brand" href="../index.html" aria-label="CP Centro de Terapias — página inicial">
+          <img src="../assets/images/logos/logomarca-cp-centro-terapias.png"
+               alt="CP Centro de Terapias e Bem-Estar"
+               width="auto" height="62">
+        </a>
+
+        <!-- Toggle mobile -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-principal"
+                aria-controls="menu-principal"
+                aria-expanded="false"
+                aria-label="Abrir ou fechar menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links de navegação -->
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto align-items-center gap-1">
+            <li class="nav-item"><a class="nav-link" href="../index.html"><span data-i18n="nav.inicio">Início</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre-mim.html"><span data-i18n="nav.sobre">Sobre mim</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="nosso-espaco.html"><span data-i18n="nav.espaco">Espaço</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="servicos.html"><span data-i18n="nav.servicos">Serviços</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="precos.html"><span data-i18n="nav.precos">Preços</span></a></li>
+            <li class="nav-item"><a class="nav-link ativo" aria-current="page" href="blog.html"><span data-i18n="nav.blog">Blog</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="reservas.html"><span data-i18n="nav.reservas">Reservas</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="cartao-presente.html"><i class="bi bi-gift me-1" aria-hidden="true"></i><span data-i18n="nav.cartao_presente">Cartão-Presente</span></a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link btn-nav-cta" href="contactos.html">
+                <i class="bi bi-envelope me-1" aria-hidden="true"></i><span data-i18n="nav.contactos">Contactos</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown ms-lg-2">
+              <a class="nav-link dropdown-toggle seletor-idioma-toggle" href="#" role="button"
+                 data-bs-toggle="dropdown" aria-expanded="false" aria-label="Escolher idioma / Choose language / Elegir idioma">
+                <i class="bi bi-globe2 me-1" aria-hidden="true"></i><span class="seletor-idioma-atual">PT</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end seletor-idioma-menu">
+                <li><button class="dropdown-item seletor-idioma-btn ativo" data-idioma="pt" type="button" aria-current="true">
+                  <span class="bandeira">🇵🇹</span> Português</button></li>
+                <li><button class="dropdown-item seletor-idioma-btn" data-idioma="es" type="button" aria-current="false">
+                  <span class="bandeira">🇪🇸</span> Español</button></li>
+                <li><button class="dropdown-item seletor-idioma-btn" data-idioma="en" type="button" aria-current="false">
+                  <span class="bandeira">🇬🇧</span> English</button></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+<!-- HERO DO BLOG -->
+  <section class="hero-blog" aria-label="Cabeçalho do blog">
+    <div class="container text-center">
+      <h1 class="mb-2">Blog &amp; Bem-Estar</h1>
+      <p class="descricao mb-4">
+        Artigos sobre massagens, saúde, terapias e autocuidado.
+        Escritos com carinho para te ajudar a cuidar melhor do teu corpo e da tua mente.
+      </p>
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-6 col-lg-5">
+          <div class="input-group shadow-sm">
+            <input type="search" class="form-control" id="campo-pesquisa"
+                   placeholder="Pesquisar artigos..." aria-label="Pesquisar artigos no blog">
+            <button class="btn-p" type="button" onclick="pesquisarArtigos()">
+              <i class="bi bi-search" aria-hidden="true"></i>
+              <span class="visually-hidden">Pesquisar</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FILTROS DE CATEGORIA -->
+  <div class="barra-filtros sticky-top u35">
+    <div class="container">
+      <div class="d-flex flex-wrap gap-2 justify-content-center">
+        <button class="filtro-btn filtro-btn-todos active" onclick="filtrar('todos', this)" aria-pressed="true">Todos</button>
+        <button class="filtro-btn filtro-btn-bem-estar" onclick="filtrar('bem-estar', this)" aria-pressed="false">
+          <i class="bi bi-heart me-1" aria-hidden="true"></i>Bem-Estar
+        </button>
+        <button class="filtro-btn filtro-btn-saude" onclick="filtrar('saude', this)" aria-pressed="false">
+          <i class="bi bi-activity me-1" aria-hidden="true"></i>Saúde
+        </button>
+        <button class="filtro-btn filtro-btn-terapias" onclick="filtrar('terapias', this)" aria-pressed="false">
+          <i class="bi bi-stars me-1" aria-hidden="true"></i>Terapias
+        </button>
+        <button class="filtro-btn filtro-btn-dicas" onclick="filtrar('dicas', this)" aria-pressed="false">
+          <i class="bi bi-lightbulb me-1" aria-hidden="true"></i>Dicas
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="conteudo-principal" class="py-5" aria-label="Artigos do blog">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Coluna esquerda: artigos -->
+        <div class="col-lg-8">
+
+          <!-- Artigo em destaque (horizontal) -->
+          <article class="card artigo-destaque artigo-card mb-4 fade-in" data-categoria="bem-estar">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="../assets/images/blog/oleos-essenciais-frascos.jpg" class="img-destaque w-100"
+                     alt="Frascos de óleos essenciais para massagem com aromaterapia">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body d-flex flex-column h-100 p-4">
+                  <div class="d-flex align-items-center gap-2 mb-2 flex-wrap">
+                    <span class="etiqueta-categoria etiqueta-bem-estar">Bem-Estar</span>
+                    <span class="etiqueta-categoria etiqueta-destaque">
+                      <i class="bi bi-star-fill me-1" aria-hidden="true"></i>Destaque
+                    </span>
+                  </div>
+                  <h2 class="h5 card-title">5 benefícios da massagem com aromaterapia que provavelmente não conheces</h2>
+                  <p class="text-muted small mb-2">
+                    <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>
+                    <time datetime="2025-03-12">12 de março de 2025</time>
+                    &bull; <i class="bi bi-clock me-1" aria-hidden="true"></i>4 min de leitura
+                  </p>
+                  <p class="card-text">Os óleos essenciais combinados com a massagem têm efeitos que vão muito além do relaxamento. Descobre como esta terapia pode melhorar o teu sono, reduzir a ansiedade e fortalecer a imunidade.</p>
+                  <a href="blog/aromaterapia-beneficios.html" class="btn-p mt-auto align-self-start">
+                    Ler artigo <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Separador com contador -->
+          <div class="separador-contador">
+            <hr>
+            <span id="contador-artigos">6 artigos</span>
+            <hr>
+          </div>
+
+          <!-- Grelha de artigos -->
+          <div class="row g-4" id="grelha-artigos">
+
+            <!-- Artigo 1: Stress -->
+          
+<div class="col-md-6 artigo-card fade-in" data-categoria="saude">
+  <article class="card h-100 shadow-sm">
+    <img src="../assets/images/blog/medica-stress-trabalho-2.jpg" class="card-img-top u08"
+        
+         alt="Pessoa com aspeto cansado ao computador">
+    <div class="card-body d-flex flex-column">
+      <span class="etiqueta-categoria etiqueta-saude mb-2 align-self-start">Saúde</span>
+      <h3 class="h6 card-title">Como a massagem de Relaxamento ajuda a combater o stress no dia a dia</h3>
+      
+      <p class="text-muted small mb-2">
+        <i class="bi bi-calendar3 me-1"></i>
+        <time datetime="2025-02-28">28 de fevereiro de 2025</time> &bull; 5 min
+      </p>
+      
+      <p class="card-text small mb-3">
+        O stress crónico é um dos maiores inimigos da saúde moderna. Percebe de que forma a massagem regular atua no sistema nervoso e reduz o cortisol de forma natural.
+      </p>
+
+      <!-- Links de Autoridade Científica -->
+      <div class="mt-auto mb-3">
+        <p class="small text-muted mb-1 u10">
+          <i class="bi bi-microscope me-1"></i> Base Científica:
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="https://nih.gov" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Efeito no Cortisol (NIH) <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+          <a href="https://nih.gov" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Ansiedade e Depressão <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="blog/massagem-stress.html" class="btn-ler-artigo">
+        Ler artigo <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </article>
+</div>
+
+            <!-- Artigo 2: Sono -->
+            <div class="col-md-6 artigo-card fade-in" data-categoria="dicas">
+  <article class="card h-100 shadow-sm">
+    <img src="../assets/images/gallery/menina-dormir-descansada.jpg" class="card-img-top u08"
+        
+         alt="Pessoa a dormir serenamente">
+    <div class="card-body d-flex flex-column">
+      <span class="etiqueta-categoria etiqueta-dicas mb-2 align-self-start">Dicas</span>
+      <h3 class="h6 card-title">Dormir melhor começa antes de dormir: o papel da massagem na qualidade do sono</h3>
+      
+      <p class="text-muted small mb-2">
+        <i class="bi bi-calendar3 me-1"></i>
+        <time datetime="2024-12-05">5 de dezembro de 2024</time> &bull; 4 min
+      </p>
+      
+      <p class="card-text small mb-3">
+        Muitas pessoas sofrem de insónia sem saberem que existe uma solução natural. Descobre como preparar o teu corpo para um descanso verdadeiramente profundo.
+      </p>
+
+      <!-- Secção de Evidência Científica -->
+      <div class="mt-auto mb-3">
+        <p class="small text-muted mb-1 u10">
+          <i class="bi bi-moon-stars me-1"></i> Ciência do Sono:
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="https://nih.gov" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Melatonina e Serotonina (NIH) <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+          <a href="https://nih.gov" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Qualidade do Descanso <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="blog/massagem-sono.html" class="btn-ler-artigo">
+        Ler artigo <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </article>
+</div>
+            
+            <!-- Artigo 3: Lomi-Lomi -->
+           <div class="col-md-6 artigo-card fade-in" data-categoria="terapias">
+  <article class="card h-100 shadow-sm">
+    <img src="../assets/images/blog/lomi-lomi-artigo.jpg" class="card-img-top u08"
+        
+         alt="Massagem lomi-lomi com movimentos longos e fluidos">
+    <div class="card-body d-flex flex-column">
+      <span class="etiqueta-categoria etiqueta-terapias mb-2 align-self-start">Terapias</span>
+      <h3 class="h6 card-title">O que é o Lomi-Lomi? A massagem havaiana que transforma corpo e mente</h3>
+      
+      <p class="text-muted small mb-2">
+        <i class="bi bi-calendar3 me-1"></i>
+        <time datetime="2024-10-02">2 de outubro de 2024</time> &bull; 5 min
+      </p>
+      
+      <p class="card-text small mb-3">
+        Proveniente do Havai, o Lomi-Lomi é muito mais do que uma massagem — é uma cerimónia de cura com movimentos inspirados nas ondas do mar.
+      </p>
+
+      <!-- Secção de Autoridade Científica/Cultural -->
+      <div class="mt-auto mb-3">
+        <p class="small text-muted mb-1 u10">
+          <i class="bi bi-flower1 me-1"></i> Tradição e Ciência:
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="https://nih.gov" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Eficácia Clínica (NIH) <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+          <a href="https://nih.gov" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Cura Tradicional <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="blog/lomi-lomi.html" class="btn-ler-artigo">
+        Ler artigo <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </article>
+</div>
+            
+       <!-- Artigo 4: Shiatsu vs Reflexologia -->
+<div class="col-md-6 artigo-card fade-in" data-categoria="terapias">
+  <article class="card h-100 shadow-sm">
+    <img src="../assets/images/blog/mao-de-terapeuta-aplicar-pressao.jpg" class="card-img-top u08"
+        
+         alt="Mãos de terapeuta a aplicar pressão nas costas">
+    <div class="card-body d-flex flex-column">
+      <span class="etiqueta-categoria etiqueta-terapias mb-2 align-self-start">Terapias</span>
+      <h3 class="h6 card-title">Shiatsu ou Reflexologia: qual é a massagem certa para ti?</h3>
+      
+      <p class="text-muted small mb-2">
+        <i class="bi bi-calendar3 me-1"></i>
+        <time datetime="2025-01-10">10 de janeiro de 2025</time> &bull; 3 min
+      </p>
+      
+      <p class="card-text small mb-3">
+        Estas duas técnicas milenares têm origens distintas e objetivos diferentes. Descobre qual se adapta melhor ao que o teu corpo precisa.
+      </p>
+
+      <!-- Secção de Links de Autoridade -->
+      <div class="mt-auto mb-3">
+        <p class="small text-muted mb-1 u36">
+          <i class="bi bi-journal-check me-1"></i> Fontes Científicas (NIH):
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3200172/" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Estudo Shiatsu <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12424206/" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Estudo Reflexologia <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="blog/shiatsu-vs-reflexologia.html" class="btn-ler-artigo">
+        Ler artigo <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </article>
+</div>
+            
+            <!-- Artigo 5: Massagem Tailandesa -->
+<div class="col-md-6 artigo-card fade-in" data-categoria="terapias">
+  <article class="card h-100 shadow-sm">
+    <!-- Imagem da Técnica -->
+    <img src="../assets/images/gallery/tailandesa-nova.jpg" class="card-img-top u08"
+        
+         alt="Sessão de massagem tailandesa com alongamentos assistidos">
+    
+    <div class="card-body d-flex flex-column">
+      <span class="etiqueta-categoria etiqueta-terapias mb-2 align-self-start">Terapias</span>
+      <h3 class="h6 card-title">Massagem Tailandesa: O segredo milenar para a flexibilidade</h3>
+      
+      <p class="text-muted small mb-2">
+        <i class="bi bi-calendar3 me-1"></i>
+        <time datetime="2025-04-20">20 de abril de 2025</time> &bull; 6 min
+      </p>
+      
+      <p class="card-text small mb-3">
+        Conhecida como "yoga assistido", a massagem tailandesa combina pressões profundas e alongamentos que libertam o fluxo de energia e eliminam tensões profundas.
+      </p>
+
+      <!-- Secção de Autoridade Científica -->
+      <div class="mt-auto mb-3">
+        <p class="small text-muted mb-1 u10">
+          <i class="bi bi-shield-check me-1"></i> Evidência Clínica:
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="https://nih.gov" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Dor e Flexibilidade (NIH) <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+          <a href="https://nih.gov" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Recuperação Muscular <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="blog/massagem-tailandesa.html" class="btn-ler-artigo">
+        Ler artigo <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </article>
+</div>
+
+
+            <!-- Artigo 6: Postura -->
+            <div class="col-md-6 artigo-card fade-in" data-categoria="saude">
+  <article class="card h-100 shadow-sm">
+    <img src="../assets/images/gallery/ma-postura-computador.jpg" class="card-img-top u08"
+        
+         alt="Pessoa com má postura ao computador">
+    <div class="card-body d-flex flex-column">
+      <span class="etiqueta-categoria etiqueta-saude mb-2 align-self-start">Saúde</span>
+      <h3 class="h6 card-title">Más posturas no trabalho: como a massagem pode ajudar a corrigir e aliviar dores</h3>
+      
+      <p class="text-muted small mb-2">
+        <i class="bi bi-calendar3 me-1"></i>
+        <time datetime="2024-11-18">18 de novembro de 2024</time> &bull; 6 min
+      </p>
+      
+      <p class="card-text small mb-3">
+        Passar horas à frente do computador tem consequências no teu corpo. Aprende como a massagem alivia contraturas e tensões posturais.
+      </p>
+
+      <!-- Secção de Evidência Científica -->
+      <div class="mt-auto mb-3">
+        <p class="small text-muted mb-1 u10">
+          <i class="bi bi-laptop me-1"></i> Ergonomia e Saúde:
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="https://nih.gov" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Dor Cervical (NIH) <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+          <a href="https://nih.gov" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Alinhamento Postural <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="blog/massagem-postura.html" class="btn-ler-artigo">
+        Ler artigo <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </article>
+</div>
+            
+            <!-- Artigo 6: Frequência -->
+       <div class="col-md-6 artigo-card fade-in" data-categoria="dicas">
+  <article class="card h-100 shadow-sm">
+    <img src="../assets/images/blog/grafico-frequencia-massagens.jpg" class="card-img-top u08"
+        
+         alt="Calendário com marcações de sessões de massagem">
+    <div class="card-body d-flex flex-column">
+      <span class="etiqueta-categoria etiqueta-dicas mb-2 align-self-start">Dicas</span>
+      <h3 class="h6 card-title">Com que frequência devo fazer massagens? A resposta que ninguém te dá</h3>
+      
+      <p class="text-muted small mb-2">
+        <i class="bi bi-calendar3 me-1"></i>
+        <time datetime="2024-09-14">14 de setembro de 2024</time> &bull; 3 min
+      </p>
+      
+      <p class="card-text small mb-3">
+        Depende do teu objetivo. Se é relaxamento, uma vez por mês pode bastar. Se tens dores crónicas, a resposta é diferente. Vê o guia completo.
+      </p>
+
+      <!-- Secção de Recomendação Clínica -->
+      <div class="mt-auto mb-3">
+        <p class="small text-muted mb-1 u10">
+          <i class="bi bi-calendar-check me-1"></i> Guia de Frequência:
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="https://nih.gov" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Estudo de Dosagem (NIH) <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+          <a href="https://amtamassage.org" target="_blank" rel="noopener" 
+             class="badge-ciencia">
+             Planos de Saúde <i class="bi bi-box-arrow-up-right ms-1 u06"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="blog/frequencia-massagens.html" class="btn-ler-artigo">
+        Ler artigo <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </article>
+</div>
+          </div><!-- fim grelha -->
+
+          <!-- Mensagem sem resultados -->
+          <div id="sem-resultados" class="text-center py-5 d-none" role="status">
+            <i class="bi bi-search fs-1 mb-3 d-block u37"></i>
+            <p class="text-muted">Nenhum artigo encontrado. Tenta outra pesquisa ou categoria.</p>
+            <button class="btn-ler-artigo mt-2"
+                    onclick="filtrar('todos', document.querySelector('.filtro-btn-todos'))">
+              Ver todos os artigos
+            </button>
+          </div>
+
+          <!-- Paginação — todos os artigos estão nesta página; página 2 em breve -->
+          <nav aria-label="Navegação entre páginas do blog" class="mt-5">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <span class="page-link"><i class="bi bi-chevron-left"></i></span>
+              </li>
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item disabled" title="Em breve">
+                <span class="page-link u38">2</span>
+              </li>
+              <li class="page-item disabled">
+                <span class="page-link"><i class="bi bi-chevron-right"></i></span>
+              </li>
+            </ul>
+            <p class="text-center mt-2 u39">
+              Mais artigos em breve
+            </p>
+          </nav>
+
+        </div><!-- fim col artigos -->
+
+
+        <!-- Barra lateral (sidebar) -->
+        <aside class="col-lg-4" aria-label="Barra lateral do blog">
+
+          <!-- Widget 1: Perfil da autora -->
+          <div class="card mb-4 fade-in">
+            <div class="card-body text-center p-4">
+              <img src="../assets/images/team/cecilia-pinto-terapeuta.jpg" class="foto-autora-sidebar mb-3"
+                   alt="Fotografia da Cecília, terapeuta certificada">
+              <h2 class="h6 fw-bold mb-1 u29">Cecília</h2>
+              <p class="text-muted small mb-3">Terapeuta certificada &bull; Santa Maria da Feira</p>
+              <p class="small mb-3">Partilho aqui o que aprendi ao longo de anos a trabalhar com o corpo humano. Acredito que o bem-estar está ao alcance de todos.</p>
+              <a href="sobre-mim.html" class="btn-ler-artigo">Conhecer melhor</a>
+            </div>
+          </div>
+
+          <!-- Widget 2: Mais lidos -->
+          <div class="card mb-4 fade-in">
+            <div class="widget-titulo"><i class="bi bi-fire text-danger me-2"></i>Mais lidos</div>
+            <a href="blog/aromaterapia-beneficios.html" class="item-mais-lido">
+              <img src="../assets/images/blog/oleos-essenciais-frascos.jpg" alt="">
+              <div>
+                <p class="mb-0 small fw-semibold lh-sm">5 benefícios da massagem com aromaterapia</p>
+                <span class="u14">
+                  <i class="bi bi-eye me-1"></i>1.2k leituras
+                </span>
+              </div>
+            </a>
+            <a href="blog/massagem-stress.html" class="item-mais-lido">
+              <img src="../assets/images/blog/medica-stress-trabalho-2.jpg" alt="">
+              <div>
+                <p class="mb-0 small fw-semibold lh-sm">Como combater o stress com massagem</p>
+                <span class="u14"><i class="bi bi-eye me-1"></i>980 leituras</span>
+              </div>
+            </a>
+            <a href="blog/frequencia-massagens.html" class="item-mais-lido">
+              <img src="../assets/images/blog/grafico-frequencia-massagens.jpg" alt="">
+              <div>
+                <p class="mb-0 small fw-semibold lh-sm">Com que frequência fazer massagens?</p>
+                <span class="u14"><i class="bi bi-eye me-1"></i>742 leituras</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Widget 3: Categorias -->
+          <div class="card mb-4 fade-in">
+            <div class="widget-titulo"><i class="bi bi-tag me-2"></i>Categorias</div>
+            <div class="card-body py-2 px-3">
+              <a href="#" class="linha-categoria"
+                 onclick="event.preventDefault();filtrar('bem-estar',null);window.scrollTo({top:0,behavior:'smooth'});">
+                <span><i class="bi bi-heart-fill me-2 u40"></i>Bem-Estar</span>
+                <span class="etiqueta-categoria etiqueta-bem-estar u13">1</span>
+              </a>
+              <a href="#" class="linha-categoria"
+                 onclick="event.preventDefault();filtrar('saude',null);window.scrollTo({top:0,behavior:'smooth'});">
+                <span><i class="bi bi-activity me-2 u41"></i>Saúde</span>
+                <span class="etiqueta-categoria etiqueta-saude u13">2</span>
+              </a>
+              <a href="#" class="linha-categoria"
+                 onclick="event.preventDefault();filtrar('terapias',null);window.scrollTo({top:0,behavior:'smooth'});">
+                <span><i class="bi bi-stars me-2 u42"></i>Terapias</span>
+                <span class="etiqueta-categoria etiqueta-terapias u13">2</span>
+              </a>
+              <a href="#" class="linha-categoria"
+                 onclick="event.preventDefault();filtrar('dicas',null);window.scrollTo({top:0,behavior:'smooth'});">
+                <span><i class="bi bi-lightbulb me-2 u43"></i>Dicas</span>
+                <span class="etiqueta-categoria etiqueta-dicas u13">2</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Widget 4: Newsletter -->
+          <div class="widget-newsletter mb-4 fade-in">
+            <h2 class="h6 fw-bold mb-2 u29">
+              <i class="bi bi-envelope-heart me-2"></i>Recebe os artigos por e-mail
+            </h2>
+            <p class="small mb-3 u44">Sem spam. Só conteúdo útil sobre bem-estar, uma vez por mês.</p>
+            <form onsubmit="subscreverNewsletter(event)" novalidate>
+              <input type="email" class="form-control mb-2" id="email-newsletter"
+                     placeholder="O teu e-mail" autocomplete="email" required>
+              <button type="submit" class="btn-subscrever">
+                <i class="bi bi-check2-circle me-1"></i>Subscrever
+              </button>
+            </form>
+          </div>
+
+          <!-- Widget 5: CTA reserva -->
+          <div class="widget-reserva fade-in">
+            <i class="bi bi-calendar-check fs-2 mb-2 d-block u09"></i>
+            <h2 class="h6 fw-bold mb-2 u45">Pronta para experimentar?</h2>
+            <p class="small mb-3 u46">Marca a tua sessão e sente a diferença na primeira visita.</p>
+            <a href="reservas.html" class="btn-p w-100">
+              <i class="bi bi-calendar-check me-2"></i>Reservar agora
+            </a>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+
+  <div class="faixa-aviso" role="alert">
+    <i class="bi bi-clock-fill me-2"></i>
+    As reservas são confirmadas por e-mail assim que possível.
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       RODAPÉ — 4 colunas + copyright + links legais RGPD
+  ════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Coluna 1: Marca + redes sociais -->
+        <div class="col-lg-4">
+          <img src="../assets/images/logos/logomarca-cp-centro-terapias.png"
+               alt="CP Centro de Terapias e Bem-Estar"
+               class="footer-logo" width="auto" height="54">
+          <p class="footer-desc">
+            <span data-i18n="footer.desc_intro">Centro de Terapias e Bem-Estar em</span>
+            <strong class="u01"><span data-i18n="topo.local1">Santa Maria da Feira</span></strong>
+            <span data-i18n="footer.e">e</span>
+            <strong class="u01"><span data-i18n="topo.local2">Esmoriz</span></strong>.
+            <span data-i18n="footer.desc_fim">Sessões personalizadas de massagem terapêutica, holística e de relaxamento.</span>
+          </p>
+          <nav class="social-wrap" aria-label="Redes sociais">
+            <a href="https://www.facebook.com/profile.php?id=61572165418991"
+               class="social-btn" target="_blank" rel="noopener noreferrer"
+               aria-label="Visitar o Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/cp.centrodeterapiadobemestar/"
+               class="social-btn" target="_blank" rel="noopener noreferrer"
+               aria-label="Visitar o Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/351939627962"
+               class="social-btn" target="_blank" rel="noopener noreferrer"
+               aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          </nav>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div class="col-lg-2 col-6">
+          <p class="footer-col-title"><span data-i18n="footer.paginas">Páginas</span></p>
+          <ul class="footer-nav" role="list">
+            <li><a href="../index.html"><span data-i18n="nav.inicio">Início</span></a></li>
+            <li><a href="sobre-mim.html"><span data-i18n="nav.sobre">Sobre mim</span></a></li>
+            <li><a href="nosso-espaco.html"><span data-i18n="footer.o_espaco">O espaço</span></a></li>
+            <li><a href="servicos.html"><span data-i18n="nav.servicos">Serviços</span></a></li>
+            <li><a href="precos.html"><span data-i18n="nav.precos">Preços</span></a></li>
+            <li><a href="blog.html"><span data-i18n="nav.blog">Blog</span></a></li>
+            <li><a href="reservas.html"><span data-i18n="nav.reservas">Reservas</span></a></li>
+            <li><a href="cartao-presente.html"><span data-i18n="nav.cartao_presente">Cartão-Presente</span></a></li>
+            <li><a href="contactos.html"><span data-i18n="nav.contactos">Contactos</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Serviços -->
+        <div class="col-lg-2 col-6">
+          <p class="footer-col-title"><span data-i18n="nav.servicos">Serviços</span></p>
+          <ul class="footer-nav" role="list">
+            <li><a href="servicos.html#aromaterapia"><span data-i18n="servicos_nomes.aromaterapia">Aromaterapia</span></a></li>
+            <li><a href="servicos.html#miofascial"><span data-i18n="servicos_nomes.miofascial">Miofascial</span></a></li>
+            <li><a href="servicos.html#ayurvedica"><span data-i18n="servicos_nomes.ayurvedica">Ayurvédica</span></a></li>
+            <li><a href="servicos.html#lomi-lomi"><span data-i18n="servicos_nomes.lomilomi">Lomi-Lomi</span></a></li>
+            <li><a href="servicos.html#shiatsu"><span data-i18n="servicos_nomes.shiatsu">Shiatsu</span></a></li>
+            <li><a href="servicos.html#reflexologia"><span data-i18n="servicos_nomes.reflexologia">Reflexologia</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Contacto -->
+        <div class="col-lg-4">
+          <p class="footer-col-title"><span data-i18n="footer.contacto">Contacto</span></p>
+          <address class="u04">
+            <div class="footer-info">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              <span><span data-i18n="footer.morada1">Santa Maria da Feira, Aveiro</span></span>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <span><span data-i18n="footer.morada2">Esmoriz, Ovar, Aveiro</span></span>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+              <a href="https://wa.me/351939627962">+351 939 627 962</a>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+              <a href="mailto:cp.centrodeterapiadobemestar@gmail.com">cp.centrodeterapiadobemestar@gmail.com</a>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-clock-fill" aria-hidden="true"></i>
+              <span><span data-i18n="footer.horario">Seg – Sáb &nbsp;·&nbsp; 10h00 – 18h00</span></span>
+            </div>
+          </address>
+          <div class="mt-4">
+            <a class="btn-p u05" href="reservas.html"
+              
+               aria-label="Reservar sessão">
+              <i class="bi bi-calendar-check me-1" aria-hidden="true"></i><span data-i18n="comum.reservar_sessao">Reservar sessão</span>
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /row colunas -->
+
+      <hr>
+
+      <!-- Copyright + Links legais RGPD -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <time datetime="2026">2026</time>
+          <span data-i18n="footer.marca">CP — Centro de Terapias e Bem-Estar</span>. <span data-i18n="footer.direitos">Todos os direitos reservados.</span>
+        </p>
+        <nav class="footer-legais" aria-label="Links legais RGPD">
+          <a href="../politica-privacidade.html"><span data-i18n="cookie.politica">Política de Privacidade</span></a>
+          <a href="../termos-utilizacao.html"><span data-i18n="cookie.termos">Termos de Utilização</span></a>
+          <a href="contactos.html">Contactos</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════════════════
+       BOTÃO VOLTAR AO TOPO
+  ════════════════════════════════════════════════════════ -->
+  <button type="button" id="btn-topo" class="btn-topo" aria-label="Voltar ao topo da página">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ════════════════════════════════════════════════════════
+       BOTÃO WHATSAPP FLUTUANTE
+  ════════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/351939627962"
+     class="btn-wa"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar pelo WhatsApp — abre numa nova janela" data-i18n-aria="comum.whatsapp_flutuante">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- ════════════════════════════════════════════════════════
+       SCRIPTS — Bootstrap 5.3.3 + JS Global do Site
+  ════════════════════════════════════════════════════════ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/i18n-dict.js"></script>
+  <script src="../assets/js/i18n.js"></script>
+
+</body>
+</html>

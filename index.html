@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ── SEO Principal ── -->
+  <title>Cecília Pinto | Centro de Terapias e Bem-Estar — Santa Maria da Feira</title>
+  <meta name="description" content="Centro de terapias e bem-estar em Santa Maria da Feira e Esmoriz. Massagens terapêuticas, holísticas e de relaxamento.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://cpterapias.pt/">
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://cpterapias.pt/">
+  <meta property="og:title"       content="Cecília Pinto | Centro de Terapias e Bem-Estar — Santa Maria da Feira">
+  <meta property="og:description" content="Centro de terapias e bem-estar em Santa Maria da Feira e Esmoriz. Massagens terapêuticas, holísticas e de relaxamento.">
+  <meta property="og:image"       content="https://cpterapias.pt/assets/images/logos/logomarca-cp-centro-terapias.png">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <!-- ── Tipografia: Cormorant Garamond + Jost ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- ── Bootstrap 5.3.3 ── -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- ── Bootstrap Icons 1.11.3 ── -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- ── CSS Global do Site ── -->
+  <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════════════════
+       SKIP LINK — Acessibilidade WCAG 2.4.1
+  ════════════════════════════════════════════════════════ -->
+  <a class="skip-link" href="#conteudo-principal"><span data-i18n="comum.saltar_conteudo">Saltar para o conteúdo</span></a>
+
+  <!-- ════════════════════════════════════════════════════════
+       COOKIE BANNER RGPD — Lógica em assets/js/main.js (initCookieBanner)
+  ════════════════════════════════════════════════════════ -->
+  <div id="cookie-banner" role="dialog" aria-modal="true"
+       aria-label="Aviso de cookies e privacidade"
+       aria-describedby="cookie-descricao">
+    <p class="cookie-texto" id="cookie-descricao">
+      <strong data-i18n="cookie.aviso_forte">Este site utiliza cookies estritamente necessários</strong>
+      <span data-i18n="cookie.aviso_meio">para o seu funcionamento. Ao continuar, aceita a nossa</span>
+      <a href="politica-privacidade.html"><span data-i18n="cookie.politica">Política de Privacidade</span></a>
+      <span data-i18n="cookie.e_os_nossos">e os nossos</span> <a href="termos-utilizacao.html"><span data-i18n="cookie.termos">Termos de Utilização</span></a>,
+      <span data-i18n="cookie.rgpd_fim">em conformidade com o RGPD.</span>
+    </p>
+    <div class="cookie-acoes">
+      <button class="btn-cookie-rejeitar" id="btn-rejeitar" aria-label="Recusar cookies">
+        <span data-i18n="cookie.recusar">Recusar</span>
+      </button>
+      <button class="btn-cookie-aceitar" id="btn-aceitar" aria-label="Aceitar cookies e fechar aviso">
+        <i class="bi bi-check2 me-1" aria-hidden="true"></i><span data-i18n="cookie.aceitar">Aceitar e continuar</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       BARRA TOPO — Presença e contacto rápido
+  ════════════════════════════════════════════════════════ -->
+  <div class="barra-topo" role="complementary" aria-label="Informação de contacto">
+    <span class="barra-topo-item">
+      <i class="bi bi-geo-alt" aria-hidden="true"></i>
+      <strong data-i18n="topo.local1">Santa Maria da Feira</strong> &amp; <strong data-i18n="topo.local2">Esmoriz</strong>
+    </span>
+    <span class="barra-topo-item">
+      <i class="bi bi-clock" aria-hidden="true"></i>
+      <span data-i18n="topo.dias">Terça a Sábado</span> &nbsp;·&nbsp; <strong data-i18n="topo.horas">10h00 – 19h00</strong>
+    </span>
+    <span class="barra-topo-item">
+      <i class="bi bi-calendar-check" aria-hidden="true"></i>
+      <span data-i18n="topo.confirmacao">Confirmação</span> <strong data-i18n="topo.confirmacao_valor">rápida</strong>
+    </span>
+    <span class="barra-topo-item">
+      <a href="tel:+351939627962" aria-label="Ligar para +351 939 627 962">
+        <i class="bi bi-telephone" aria-hidden="true"></i>
+        +351 939 627 962
+      </a>
+    </span>
+    <span class="barra-topo-item">
+      <a href="https://wa.me/351939627962" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        <span data-i18n="topo.whatsapp_disponivel">WhatsApp disponível</span>
+      </a>
+    </span>
+    <span class="barra-topo-item">
+      <i class="bi bi-heart" aria-hidden="true"></i>
+      <span data-i18n="topo.tagline">Massagens terapêuticas &amp; bem-estar</span>
+    </span>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       NAVBAR — Glassmorphism + sticky
+       Classe .scrolled adicionada por JS (main.js initNavbarScroll)
+  ════════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container">
+
+        <!-- Logótipo -->
+        <a class="navbar-brand" href="index.html" aria-label="CP Centro de Terapias — página inicial">
+          <img src="assets/images/logos/logomarca-cp-centro-terapias.png"
+               alt="CP Centro de Terapias e Bem-Estar"
+               width="auto" height="62">
+        </a>
+
+        <!-- Toggle mobile -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu-principal"
+                aria-controls="menu-principal"
+                aria-expanded="false"
+                aria-label="Abrir ou fechar menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links de navegação -->
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto align-items-center gap-1">
+            <li class="nav-item"><a class="nav-link ativo" aria-current="page" href="index.html"><span data-i18n="nav.inicio">Início</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/sobre-mim.html"><span data-i18n="nav.sobre">Sobre mim</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/nosso-espaco.html"><span data-i18n="nav.espaco">Espaço</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/servicos.html"><span data-i18n="nav.servicos">Serviços</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/precos.html"><span data-i18n="nav.precos">Preços</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/blog.html"><span data-i18n="nav.blog">Blog</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/reservas.html"><span data-i18n="nav.reservas">Reservas</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/cartao-presente.html"><i class="bi bi-gift me-1" aria-hidden="true"></i><span data-i18n="nav.cartao_presente">Cartão-Presente</span></a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link btn-nav-cta" href="pages/contactos.html">
+                <i class="bi bi-envelope me-1" aria-hidden="true"></i><span data-i18n="nav.contactos">Contactos</span>
+              </a>
+            </li>
+            <!-- Seletor de idioma -->
+            <li class="nav-item dropdown ms-lg-2">
+              <a class="nav-link dropdown-toggle seletor-idioma-toggle" href="#" role="button"
+                 data-bs-toggle="dropdown" aria-expanded="false" aria-label="Escolher idioma / Choose language / Elegir idioma">
+                <i class="bi bi-globe2 me-1" aria-hidden="true"></i><span class="seletor-idioma-atual">PT</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end seletor-idioma-menu">
+                <li><button class="dropdown-item seletor-idioma-btn ativo" data-idioma="pt" type="button" aria-current="true">
+                  <span class="bandeira">🇵🇹</span> Português</button></li>
+                <li><button class="dropdown-item seletor-idioma-btn" data-idioma="es" type="button" aria-current="false">
+                  <span class="bandeira">🇪🇸</span> Español</button></li>
+                <li><button class="dropdown-item seletor-idioma-btn" data-idioma="en" type="button" aria-current="false">
+                  <span class="bandeira">🇬🇧</span> English</button></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+<!-- ════════════════════════════════════════════════════════
+       CONTEÚDO PRINCIPAL — id para skip-link
+  ════════════════════════════════════════════════════════ -->
+  <main id="conteudo-principal">
+
+
+    <!-- ══════════════════════════════════════════════════════
+         HERO — Fullscreen slideshow
+         H1 único desta página (SEO + WCAG 1.3.1)
+    ══════════════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Apresentação — Centro de Terapias e Bem-Estar">
+
+      <!-- Slides de fundo (decorativos — aria-hidden) -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-slide"></div>
+        <div class="hero-slide"></div>
+        <div class="hero-slide"></div>
+        <div class="hero-slide"></div>
+      </div>
+
+      <!-- Monograma CP — logótipo real em SVG, animação em 2 metades (decorativo — aria-hidden) -->
+      <div class="hero-monograma" aria-hidden="true">
+        <div class="hero-mono-metade hero-mono-esquerda">
+          <img src="assets/images/logos/logo-cp-monograma.svg" alt="">
+        </div>
+        <div class="hero-mono-metade hero-mono-direita">
+          <img src="assets/images/logos/logo-cp-monograma.svg" alt="">
+        </div>
+      </div>
+
+      <!-- Conteúdo ancorado em baixo-esquerda -->
+      <div class="hero-conteudo">
+        <div class="container">
+
+          <!-- Pré-título (localização) -->
+          <span class="hero-pretitulo">
+            <i class="bi bi-geo-alt me-1" aria-hidden="true"></i>
+            <span data-i18n="home.hero_pretitulo">Centro de Terapias · Santa Maria da Feira &amp; Esmoriz</span>
+          </span>
+
+
+          <!-- H1 — único, com palavra-chave principal -->
+          <h1>
+            <span data-i18n="home.hero_titulo1">Um espaço dedicado</span>
+            <span class="hero-subtitulo-elegante" data-i18n="home.hero_titulo2">a cuidar de si</span>
+          </h1>
+
+          <p class="hero-desc" data-i18n="home.hero_desc">
+            Massagens terapêuticas, holísticas e de relaxamento
+            num ambiente pensado para o seu descanso.
+            Sessões completamente personalizadas, desde o primeiro minuto.
+          </p>
+
+          <div class="hero-btns">
+            <a class="btn-p" href="pages/reservas.html"
+               aria-label="Reservar uma sessão de massagem">
+              <i class="bi bi-calendar-check me-2" aria-hidden="true"></i><span data-i18n="comum.reservar_sessao">Reservar sessão</span>
+            </a>
+            <a class="btn-ghost" href="pages/servicos.html"
+               aria-label="Ver todos os serviços de massagem">
+              <span data-i18n="comum.ver_servicos">Ver serviços</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         FAIXA DE ESTATÍSTICAS / CONFIANÇA
+    ══════════════════════════════════════════════════════ -->
+    <section class="faixa-stats" aria-label="Indicadores de confiança">
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-4">
+
+          <div class="col-auto">
+            <div class="stat-item fade-in">
+              <span class="stat-num" data-target="150" data-prefixo="+" aria-label="Mais de 150 clientes satisfeitos">0</span>
+              <span class="stat-label" data-i18n="home.stat_clientes">Clientes satisfeitos</span>
+            </div>
+          </div>
+
+          <div class="col-auto d-none d-md-flex" aria-hidden="true">
+            <div class="sep-v"></div>
+          </div>
+
+          <div class="col-auto">
+            <div class="stat-item fade-in delay-1">
+              <span class="stat-num" data-target="6" aria-label="6 técnicas especializadas">0</span>
+              <span class="stat-label" data-i18n="home.stat_tecnicas">Técnicas especializadas</span>
+            </div>
+          </div>
+
+          <div class="col-auto d-none d-md-flex" aria-hidden="true">
+            <div class="sep-v"></div>
+          </div>
+
+          <div class="col-auto">
+            <div class="stat-item fade-in delay-2">
+              <span class="stat-num" data-target="2" aria-label="2 espaços disponíveis">0</span>
+              <span class="stat-label" data-i18n="home.stat_espacos">Espaços disponíveis</span>
+            </div>
+          </div>
+
+          <div class="col-auto d-none d-md-flex" aria-hidden="true">
+            <div class="sep-v"></div>
+          </div>
+
+          <div class="col-auto">
+            <div class="stat-item fade-in delay-3">
+              <span class="stat-num" aria-label="Certificada">✓</span>
+              <span class="stat-label" data-i18n="home.stat_certificada">Terapeuta certificada</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         SOBRE — Split layout 50/50 com badge flutuante
+    ══════════════════════════════════════════════════════ -->
+    <section class="sec-sobre" aria-label="Sobre o Centro de Terapias Cecília Pinto">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <!-- Imagem com badge -->
+          <div class="col-lg-6 fade-in">
+            <div class="sobre-img-wrap">
+              <img src="assets/images/hero/massagem-ayurvedica.jpg"
+                   class="sobre-img"
+                   alt="Sessão de massagem terapêutica no Centro de Terapias Cecília Pinto"
+                   loading="lazy"
+                   width="600" height="540">
+              <!-- Badge — decorativo, ariacontido no parágrafo adjacente -->
+              <div class="sobre-badge" aria-hidden="true">
+                <span class="b-num">+3</span>
+                <span class="b-txt" data-i18n="home.badge_anos">Anos de experiência</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texto -->
+          <div class="col-lg-6 fade-in delay-1">
+            <div class="sobre-corpo">
+
+              <span class="etiqueta" data-i18n="home.sobre_etiqueta">O nosso espaço</span>
+
+              <!-- H2 — hierarquia correta após H1 -->
+              <h2 class="sec-titulo">
+                <span data-i18n="home.sobre_titulo1">Centro de Terapias</span>
+                <span class="sec-titulo-elegante" data-i18n="home.sobre_titulo2">e Bem-Estar</span>
+              </h2>
+
+              <p class="sec-sub" data-i18n="home.sobre_texto">
+                Um espaço pensado para o seu descanso desde o primeiro minuto.
+                Iluminação suave, aromas naturais e silêncio — para que possa
+                desligar do mundo e reconectar-se consigo.
+              </p>
+
+              <!-- Lista de diferenciais -->
+              <ul class="lista-check" aria-label="Diferenciais do serviço">
+                <li>
+                  <div class="check-icon" aria-hidden="true"><i class="bi bi-check"></i></div>
+                  <span data-i18n="home.diferencial1">Terapeuta certificada com formação especializada</span>
+                </li>
+                <li>
+                  <div class="check-icon" aria-hidden="true"><i class="bi bi-check"></i></div>
+                  <span data-i18n="home.diferencial2">Ambiente acolhedor com materiais e aromas naturais</span>
+                </li>
+                <li>
+                  <div class="check-icon" aria-hidden="true"><i class="bi bi-check"></i></div>
+                  <span data-i18n="home.diferencial3">Combinação de técnicas adaptada a cada sessão</span>
+                </li>
+                <li>
+                  <div class="check-icon" aria-hidden="true"><i class="bi bi-check"></i></div>
+                  <span data-i18n="home.diferencial4">Disponível para crianças, adultos, idosos, grávidas e desportistas</span>
+                </li>
+              </ul>
+
+              <a class="btn-p" href="pages/sobre-mim.html"
+                 aria-label="Conhecer melhor a terapeuta Cecília Pinto">
+                <span data-i18n="home.conhecer_terapeuta">Conhecer a terapeuta</span>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         SERVIÇOS — Cards fullimage com overlay no hover
+    ══════════════════════════════════════════════════════ -->
+    <section class="sec-servicos" aria-label="Serviços de massagem e terapias">
+      <div class="container">
+
+        <header class="sec-header fade-in">
+          <span class="etiqueta" data-i18n="home.servicos_etiqueta">Tratamentos</span>
+          <h2 class="sec-titulo" data-i18n="home.servicos_titulo">Os Nossos Serviços</h2>
+          <p class="sec-sub u27" data-i18n="home.servicos_sub">
+            Pode combinar técnicas na mesma sessão —
+            adaptamos tudo ao que o seu corpo precisar hoje.
+          </p>
+        </header>
+
+        <div class="row g-4">
+
+          <!-- Aromaterapia -->
+          <div class="col-lg-4 col-md-6 fade-in">
+            <article class="card-s" aria-label="Serviço: Massagem com Aromaterapia">
+              <img src="assets/images/gallery/massagem-aromaterapia.jpg"
+                   alt="Massagem com óleos essenciais — Aromaterapia"
+                   class="card-s-img" loading="lazy" width="400" height="370">
+              <div class="card-s-overlay">
+                <div class="card-s-corpo">
+                  <span class="card-s-dur">60 – 90 min</span>
+                  <h3 data-i18n="home.servico_aromaterapia_titulo">Aromaterapia</h3>
+                  <p data-i18n="home.servico_aromaterapia_desc">Óleos essenciais naturais para promover bem-estar físico e emocional profundo.</p>
+                  <a href="pages/servicos.html#aromaterapia" class="card-s-link"
+                     aria-label="Saber mais sobre Massagem com Aromaterapia"><span data-i18n="comum.saber_mais">Saber mais</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Miofascial -->
+          <div class="col-lg-4 col-md-6 fade-in delay-1">
+            <article class="card-s" aria-label="Serviço: Libertação Miofascial">
+              <img src="assets/images/gallery/terapeutica1.jpg"
+                   alt="Libertação miofascial — pressão em pontos de tensão"
+                   class="card-s-img" loading="lazy" width="400" height="370">
+              <div class="card-s-overlay">
+                <div class="card-s-corpo">
+                  <span class="card-s-dur">45 – 60 min</span>
+                  <h3 data-i18n="home.servico_miofascial_titulo">Libertação Miofascial</h3>
+                  <p data-i18n="home.servico_miofascial_desc">Pressão em pontos específicos para libertar tensões causadas por stress ou postura.</p>
+                  <a href="pages/servicos.html#miofascial" class="card-s-link"
+                     aria-label="Saber mais sobre Libertação Miofascial"><span data-i18n="comum.saber_mais">Saber mais</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Ayurvédica -->
+          <div class="col-lg-4 col-md-6 fade-in delay-2">
+            <article class="card-s" aria-label="Serviço: Massagem Ayurvédica">
+              <img src="assets/images/hero/massagem-ayurvedica.jpg"
+                   alt="Massagem Ayurvédica — técnica milenar indiana"
+                   class="card-s-img" loading="lazy" width="400" height="370">
+              <div class="card-s-overlay">
+                <div class="card-s-corpo">
+                  <span class="card-s-dur">75 – 90 min</span>
+                  <h3 data-i18n="home.servico_ayurvedica_titulo">Massagem Ayurvédica</h3>
+                  <p data-i18n="home.servico_ayurvedica_desc">Técnica milenar com óleos quentes e movimentos rítmicos que reequilibram a energia vital.</p>
+                  <a href="pages/servicos.html#ayurvedica" class="card-s-link"
+                     aria-label="Saber mais sobre Massagem Ayurvédica"><span data-i18n="comum.saber_mais">Saber mais</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Lomi-Lomi -->
+          <div class="col-lg-4 col-md-6 fade-in">
+            <article class="card-s" aria-label="Serviço: Lomi-Lomi havaiana">
+              <img src="assets/images/gallery/lomi-lomi.jpg"
+                   alt="Massagem Lomi-Lomi havaiana — movimentos longos e fluidos"
+                   class="card-s-img" loading="lazy" width="400" height="370">
+              <div class="card-s-overlay">
+                <div class="card-s-corpo">
+                  <span class="card-s-dur">75 – 90 min</span>
+                  <h3 data-i18n="home.servico_lomilomi_titulo">Lomi-Lomi</h3>
+                  <p data-i18n="home.servico_lomilomi_desc">Movimentos longos e fluidos que envolvem o corpo e promovem libertação emocional.</p>
+                  <a href="pages/servicos.html#lomi-lomi" class="card-s-link"
+                     aria-label="Saber mais sobre Lomi-Lomi"><span data-i18n="comum.saber_mais">Saber mais</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Shiatsu -->
+          <div class="col-lg-4 col-md-6 fade-in delay-1">
+            <article class="card-s" aria-label="Serviço: Shiatsu japonês">
+              <img src="assets/images/gallery/shiatsu.jpg"
+                   alt="Shiatsu — pressão em meridianos energéticos"
+                   class="card-s-img" loading="lazy" width="400" height="370">
+              <div class="card-s-overlay">
+                <div class="card-s-corpo">
+                  <span class="card-s-dur">60 min</span>
+                  <h3 data-i18n="home.servico_shiatsu_titulo">Shiatsu</h3>
+                  <p data-i18n="home.servico_shiatsu_desc">Pressão em meridianos energéticos para equilibrar o corpo e aliviar tensões profundas.</p>
+                  <a href="pages/servicos.html#shiatsu" class="card-s-link"
+                     aria-label="Saber mais sobre Shiatsu"><span data-i18n="comum.saber_mais">Saber mais</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Reflexologia -->
+          <div class="col-lg-4 col-md-6 fade-in delay-2">
+            <article class="card-s" aria-label="Serviço: Reflexologia Podal">
+              <img src="assets/images/hero/reflexologia1.jpg"
+                   alt="Reflexologia podal — estimulação de pontos reflexos nos pés"
+                   class="card-s-img" loading="lazy" width="400" height="370">
+              <div class="card-s-overlay">
+                <div class="card-s-corpo">
+                  <span class="card-s-dur">30 – 45 min</span>
+                  <h3 data-i18n="home.servico_reflexologia_titulo">Reflexologia Podal</h3>
+                  <p data-i18n="home.servico_reflexologia_desc">Estimulação de pontos reflexos nos pés, profundamente relaxante e terapêutica.</p>
+                  <a href="pages/servicos.html#reflexologia" class="card-s-link"
+                     aria-label="Saber mais sobre Reflexologia Podal"><span data-i18n="comum.saber_mais">Saber mais</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div><!-- /row serviços -->
+
+        <div class="text-center mt-5 fade-in">
+          <a class="btn-p" href="pages/servicos.html"
+             aria-label="Ver a lista completa de serviços">
+            <i class="bi bi-grid me-2" aria-hidden="true"></i><span data-i18n="comum.ver_todos_servicos">Ver todos os serviços</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         O QUE DIZEM OS CLIENTES — prova social antes da chamada para ação
+    ══════════════════════════════════════════════════════ -->
+    <section class="py-5" aria-label="O que dizem os clientes" style="background: var(--creme-branco);">
+      <div class="container">
+        <div class="text-center mb-5 fade-in">
+          <span class="etiqueta">Confiança</span>
+          <h2 class="sec-titulo">O que dizem os clientes</h2>
+          <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+            <span class="u18" style="font-size:1.1rem;">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </span>
+            <span style="color:var(--texto-claro); font-size:0.88rem;">Avaliação média de mais de 500 clientes</span>
+          </div>
+        </div>
+        <div class="row g-4">
+
+          <div class="col-md-4 fade-in">
+            <div class="card h-100 p-4">
+              <div class="mb-3 u18">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-3 u19">
+                "Cheguei com muitas dores nas costas e saí completamente diferente.
+                A Cecília tem um dom especial — sente onde está o problema antes
+                de eu dizer uma palavra."
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold u20">MA</div>
+                <div>
+                  <p class="fw-semibold mb-0 small">Maria A.</p>
+                  <p class="text-muted mb-0 u21">Santa Maria da Feira</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 fade-in delay-1">
+            <div class="card h-100 p-4">
+              <div class="mb-3 u18">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-3 u19">
+                "Faço sessões mensais há dois anos. É o melhor investimento que faço
+                na minha saúde. O espaço é uma ilha de paz no meio da agitação do dia a dia."
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold u20">JF</div>
+                <div>
+                  <p class="fw-semibold mb-0 small">João F.</p>
+                  <p class="text-muted mb-0 u21">Aveiro</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 fade-in delay-2">
+            <div class="card h-100 p-4">
+              <div class="mb-3 u18">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-3 u19">
+                "Fiz uma sessão de reflexologia pela primeira vez e não esperava sentir
+                tanto alívio. A Cecília explica tudo com calma e faz-nos sentir muito à vontade."
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold u20">SR</div>
+                <div>
+                  <p class="fw-semibold mb-0 small">Sofia R.</p>
+                  <p class="text-muted mb-0 u21">Porto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="text-center mt-4 fade-in">
+          <a href="pages/sobre-mim.html#testemunhos" class="preco-link" style="font-size:0.85rem;">Ver todos os testemunhos<i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         FAIXA CTA CENTRAL
+    ══════════════════════════════════════════════════════ -->
+    <section class="faixa-cta" aria-label="Chamada para reserva">
+      <div class="container text-center fade-in">
+        <p class="cta-t">
+          <span data-i18n="home.cta_titulo1">Pronto para se sentir bem?</span>
+          <span class="cta-elegante" data-i18n="home.cta_titulo2">O seu momento de pausa começa aqui.</span>
+        </p>
+        <p class="cta-d" data-i18n="home.cta_desc">
+          Reserve a sua sessão em Santa Maria da Feira ou Esmoriz.
+          Responderemos o mais rápido possível.
+        </p>
+        <a class="btn-branco" href="pages/reservas.html"
+           aria-label="Reservar sessão de massagem">
+          <i class="bi bi-calendar-check me-2" aria-hidden="true"></i><span data-i18n="comum.reservar_agora">Reservar agora</span>
+        </a>
+      </div>
+    </section>
+
+
+     <!-- ════════════════════════════════════════════════════════════
+       RESERVA — SPLIT IMAGEM + FORMULÁRIO
+  ════════════════════════════════════════════════════════════ -->
+  <section class="sec-reserva" aria-label="Formulário de reserva rápida" id="reserva">
+    <div class="container">
+      <div class="row g-5 align-items-stretch">
+
+        <!-- Imagem lateral (desktop) -->
+        <div class="col-lg-5 d-none d-lg-flex align-items-stretch fade-in">
+          <img src="assets/images/hero/sala-de-espera.jpg"
+               class="reserva-img"
+               alt="Sala de espera do Centro de Terapias — CP Centro de Terapias"
+               loading="lazy">
+        </div>
+
+        <!-- Formulário -->
+        <div class="col-lg-7 fade-in delay-1">
+          <span class="etiqueta" data-i18n="nav.reservas">Reservas</span>
+          <h2 class="sec-titulo mb-2" data-i18n="home.reserva_titulo">Marque a sua sessão</h2>
+          <p class="sec-sub mb-4" data-i18n="home.reserva_sub">
+            Preencha o formulário e entraremos em contacto brevemente.
+          </p>
+
+          <div class="form-box">
+            <form name="reserva-rapida" method="POST" data-netlify="true" netlify-honeypot="empresa" novalidate>
+              <input type="hidden" name="form-name" value="reserva-rapida">
+              <p class="d-none"><label>Não preencher: <input name="empresa"></label></p>
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <label for="nome" class="form-label" data-i18n="form.nome_label">Nome</label>
+                  <input type="text" id="nome" name="nome" class="form-control"
+                         placeholder="O seu nome completo" data-i18n-placeholder="form.nome_placeholder" required autocomplete="name">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label" data-i18n="form.email_label">E-mail</label>
+                  <input type="email" id="email" name="email" class="form-control"
+                         placeholder="email@exemplo.com" required autocomplete="email">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="telefone" class="form-label">
+                    <span data-i18n="form.telefone_label">Telefone</span> <span class="u28" data-i18n="form.opcional">(opcional)</span>
+                  </label>
+                  <input type="tel" id="telefone" name="telefone" class="form-control"
+                         placeholder="+351 900 000 000" autocomplete="tel">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="massagem" class="form-label" data-i18n="form.tipo_massagem_label">Tipo de massagem</label>
+                  <select id="massagem" name="massagem" class="form-select" required>
+                    <option value="" disabled selected data-i18n="form.escolher_servico">Escolher serviço…</option>
+                    <option data-i18n="form.opcao_aromaterapia">Massagem com Aromaterapia</option>
+                    <option data-i18n="form.opcao_miofascial">Libertação Miofascial</option>
+                    <option data-i18n="form.opcao_ayurvedica">Massagem Ayurvédica</option>
+                    <option data-i18n="servicos_nomes.lomilomi">Lomi-Lomi</option>
+                    <option data-i18n="servicos_nomes.shiatsu">Shiatsu</option>
+                    <option data-i18n="form.opcao_reflexologia">Reflexologia Podal</option>
+                    <option data-i18n="servicos.facial_titulo">Limpeza e Hidratação de Rosto</option>
+                    <option data-i18n="servicos.lifting_titulo">Lifting Facial (Massagem de Rosto)</option>
+                    <option data-i18n="servicos.esfoliacao_titulo">Esfoliação e Hidratação Corporal</option>
+                    <option data-i18n="servicos.criancas_titulo">Massagem em Crianças</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="data" class="form-label" data-i18n="form.data_label">Data preferida</label>
+                  <input type="date" id="data" name="data" class="form-control" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="mensagem" class="form-label">
+                    <span data-i18n="form.mensagem_label">Mensagem</span> <span class="u28" data-i18n="form.opcional">(opcional)</span>
+                  </label>
+                  <textarea id="mensagem" name="mensagem" class="form-control" rows="3"
+                            placeholder="Horários preferidos, dores específicas ou outras indicações…" data-i18n-placeholder="form.mensagem_placeholder"></textarea>
+                </div>
+
+                <div class="col-12 mt-2">
+                  <button type="submit" class="btn-form">
+                    <i class="bi bi-send me-2" aria-hidden="true"></i><span data-i18n="form.enviar_pedido">Enviar pedido de reserva</span>
+                  </button>
+                  <div class="aviso-form">
+                    <i class="bi bi-clock" aria-hidden="true"></i>
+                    <span data-i18n="form.confirmacao_email">Confirmação por e-mail assim que possível</span>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- /form-box -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         VÍDEOS — Demonstração das técnicas
+    ══════════════════════════════════════════════════════ -->
+    <section class="sec-videos" aria-label="Vídeos de demonstração das técnicas de massagem">
+      <div class="container">
+
+        <header class="sec-header fade-in">
+          <span class="etiqueta">Em ação</span>
+          <h2 class="sec-titulo">
+            Veja as Técnicas
+            <span class="sec-titulo-elegante">em demonstração</span>
+          </h2>
+          <p class="sec-sub">
+            Pequenos vídeos que mostram como cada massagem é realizada
+            — para que saiba exatamente o que esperar.
+          </p>
+        </header>
+
+        <div class="video-grid fade-in">
+
+          <button type="button" class="video-item" data-bs-toggle="modal" data-bs-target="#modalVideo"
+                  data-video="assets/videos/massagem-miofascial.mp4"
+                  data-titulo="Libertação Miofascial">
+            <img src="assets/videos/posters/massagem-miofascial.jpg" alt="Vídeo: Libertação Miofascial" loading="lazy">
+            <span class="video-play"><i class="bi bi-play-fill"></i></span>
+            <span class="video-legenda">Libertação Miofascial</span>
+          </button>
+
+          <button type="button" class="video-item" data-bs-toggle="modal" data-bs-target="#modalVideo"
+                  data-video="assets/videos/massagem-relaxamento-completa.mp4"
+                  data-titulo="Massagem de Relaxamento">
+            <img src="assets/videos/posters/massagem-relaxamento-completa.jpg" alt="Vídeo: Massagem de Relaxamento" loading="lazy">
+            <span class="video-play"><i class="bi bi-play-fill"></i></span>
+            <span class="video-legenda">Massagem de Relaxamento</span>
+          </button>
+
+          <button type="button" class="video-item" data-bs-toggle="modal" data-bs-target="#modalVideo"
+                  data-video="assets/videos/massagem-criancas.mp4"
+                  data-titulo="Massagem em Crianças">
+            <img src="assets/videos/posters/massagem-criancas.jpg" alt="Vídeo: Massagem em Crianças" loading="lazy">
+            <span class="video-play"><i class="bi bi-play-fill"></i></span>
+            <span class="video-legenda">Massagem em Crianças</span>
+          </button>
+
+          <button type="button" class="video-item" data-bs-toggle="modal" data-bs-target="#modalVideo"
+                  data-video="assets/videos/massagem-bebe.mp4"
+                  data-titulo="Massagem em Bebés">
+            <img src="assets/videos/posters/massagem-bebe.jpg" alt="Vídeo: Massagem em Bebés" loading="lazy">
+            <span class="video-play"><i class="bi bi-play-fill"></i></span>
+            <span class="video-legenda">Massagem em Bebés</span>
+          </button>
+
+          <button type="button" class="video-item" data-bs-toggle="modal" data-bs-target="#modalVideo"
+                  data-video="assets/videos/reflexologia2.mp4"
+                  data-titulo="Reflexologia — detalhe da técnica">
+            <img src="assets/videos/posters/reflexologia2.jpg" alt="Vídeo: Reflexologia — detalhe da técnica" loading="lazy">
+            <span class="video-play"><i class="bi bi-play-fill"></i></span>
+            <span class="video-legenda">Reflexologia — detalhe</span>
+          </button>
+
+          <button type="button" class="video-item" data-bs-toggle="modal" data-bs-target="#modalVideo"
+                  data-video="assets/videos/reflexologia.mp4"
+                  data-titulo="Reflexologia Podal">
+            <img src="assets/videos/posters/reflexologia.jpg" alt="Vídeo: Reflexologia Podal" loading="lazy">
+            <span class="video-play"><i class="bi bi-play-fill"></i></span>
+            <span class="video-legenda">Reflexologia Podal</span>
+          </button>
+
+          <button type="button" class="video-item" data-bs-toggle="modal" data-bs-target="#modalVideo"
+                  data-video="assets/videos/shiatsu2.mp4"
+                  data-titulo="Shiatsu — sessão completa">
+            <img src="assets/videos/posters/shiatsu2.jpg" alt="Vídeo: Shiatsu — sessão completa" loading="lazy">
+            <span class="video-play"><i class="bi bi-play-fill"></i></span>
+            <span class="video-legenda">Shiatsu — sessão completa</span>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Modal de reprodução de vídeo -->
+    <div class="modal fade" id="modalVideo" tabindex="-1" aria-hidden="true" aria-label="Vídeo ampliado">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          <div class="ratio ratio-16x9">
+            <video id="videoModalPlayer" controls></video>
+          </div>
+          <p id="videoModalLegenda" class="galeria-modal-legenda"></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         BLOG — 3 artigos em destaque
+    ══════════════════════════════════════════════════════ -->
+    <section class="sec-blog" aria-label="Artigos recentes do Blog de Bem-Estar">
+      <div class="container">
+
+        <header class="sec-header fade-in">
+          <span class="etiqueta" data-i18n="home.blog_etiqueta">Blog</span>
+          <h2 class="sec-titulo">
+            <span data-i18n="home.blog_titulo1">Blog &amp; Bem-Estar</span>
+            <span class="sec-titulo-elegante" data-i18n="home.blog_titulo2">artigos para o inspirar</span>
+          </h2>
+          <p class="sec-sub u34" data-i18n="home.blog_sub">
+            Dicas práticas, curiosidades e artigos sobre saúde,
+            relaxamento e terapias — escritos para si.
+          </p>
+        </header>
+
+        <div class="row g-4">
+
+          <!-- Artigo 1 -->
+          <div class="col-md-4 fade-in">
+            <article class="card-blog">
+              <div class="blog-img-wrap">
+                <img src="assets/images/gallery/massagem-aromaterapia.jpg"
+                     class="blog-img"
+                     alt="Óleos essenciais utilizados em aromaterapia"
+                     loading="lazy" width="400" height="210">
+              </div>
+              <div class="blog-corpo">
+                <span class="tag-cat tag-bem-estar">Bem-Estar</span>
+                <h3>5 benefícios da massagem com aromaterapia que provavelmente não conhece</h3>
+                <p class="blog-meta">
+                  <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>
+                  <time datetime="2025-03-12">12 mar 2025</time>
+                  &bull; 4 min de leitura
+                </p>
+                <a href="pages/blog/aromaterapia-beneficios.html" class="link-blog"
+                   aria-label="Ler artigo: 5 benefícios da massagem com aromaterapia">
+                  Ler artigo <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Artigo 2 -->
+          <div class="col-md-4 fade-in delay-1">
+            <article class="card-blog">
+              <div class="blog-img-wrap">
+                <img src="assets/images/blog/medica-stress-trabalho-2.jpg"
+                     class="blog-img"
+                     alt="Pessoa a lidar com stress no trabalho"
+                     loading="lazy" width="400" height="210">
+              </div>
+              <div class="blog-corpo">
+                <span class="tag-cat tag-saude">Saúde</span>
+                <h3>Como a massagem terapêutica ajuda a combater o stress no dia a dia</h3>
+                <p class="blog-meta">
+                  <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>
+                  <time datetime="2025-02-28">28 fev 2025</time>
+                  &bull; 5 min de leitura
+                </p>
+                <a href="pages/blog/massagem-stress.html" class="link-blog"
+                   aria-label="Ler artigo: Como a massagem ajuda a combater o stress">
+                  Ler artigo <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Artigo 3 -->
+          <div class="col-md-4 fade-in delay-2">
+            <article class="card-blog">
+              <div class="blog-img-wrap">
+                <img src="assets/images/gallery/sala-terapias.jpg"
+                     class="blog-img"
+                     alt="Demonstração de Shiatsu ou Reflexologia"
+                     loading="lazy" width="400" height="210">
+              </div>
+              <div class="blog-corpo">
+                <span class="tag-cat tag-terapias">Terapias</span>
+                <h3>Shiatsu ou Reflexologia: qual é a massagem certa para si?</h3>
+                <p class="blog-meta">
+                  <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>
+                  <time datetime="2025-01-10">10 jan 2025</time>
+                  &bull; 3 min de leitura
+                </p>
+                <a href="pages/blog/shiatsu-vs-reflexologia.html" class="link-blog"
+                   aria-label="Ler artigo: Shiatsu ou Reflexologia — qual escolher?">
+                  Ler artigo <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+        </div><!-- /row artigos -->
+
+        <div class="text-center mt-5 fade-in">
+          <a class="btn-p" href="pages/blog.html"
+             aria-label="Ver todos os artigos do blog">
+            <i class="bi bi-journal-text me-2" aria-hidden="true"></i><span data-i18n="comum.ver_todos_artigos">Ver todos os artigos</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         FAIXA PILARES — 3 diferenciais do serviço
+    ══════════════════════════════════════════════════════ -->
+    <section class="faixa-pilares" aria-label="Os nossos compromissos">
+      <div class="container">
+        <div class="row g-4 text-center">
+
+          <div class="col-md-4 fade-in">
+            <div class="pilar">
+              <i class="bi bi-people" aria-hidden="true"></i>
+              <strong data-i18n="home.pilar1_titulo">Disponível para todos</strong>
+              <span data-i18n="home.pilar1_desc">Crianças, adultos, idosos, grávidas e desportistas</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 fade-in delay-1">
+            <div class="pilar">
+              <i class="bi bi-shield-check" aria-hidden="true"></i>
+              <strong data-i18n="home.pilar2_titulo">Profissionalismo garantido</strong>
+              <span data-i18n="home.pilar2_desc">Terapeuta com formação certificada</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 fade-in delay-2">
+            <div class="pilar">
+              <i class="bi bi-award" aria-hidden="true"></i>
+              <strong data-i18n="home.pilar3_titulo">Resultados reais</strong>
+              <span data-i18n="home.pilar3_desc">Mais de 500 clientes satisfeitos</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /main#conteudo-principal -->
+
+
+  <!-- ════════════════════════════════════════════════════════
+       RODAPÉ — 4 colunas + links legais RGPD
+  ════════════════════════════════════════════════════════ -->
+
+
+  <!-- ════════════════════════════════════════════════════════
+       RODAPÉ — 4 colunas + copyright + links legais RGPD
+  ════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Coluna 1: Marca + redes sociais -->
+        <div class="col-lg-4">
+          <img src="assets/images/logos/logomarca-cp-centro-terapias.png"
+               alt="CP Centro de Terapias e Bem-Estar"
+               class="footer-logo" width="auto" height="54">
+          <p class="footer-desc">
+            <span data-i18n="footer.desc_intro">Centro de Terapias e Bem-Estar em</span>
+            <strong class="u01"><span data-i18n="topo.local1">Santa Maria da Feira</span></strong>
+            <span data-i18n="footer.e">e</span>
+            <strong class="u01"><span data-i18n="topo.local2">Esmoriz</span></strong>.
+            <span data-i18n="footer.desc_fim">Sessões personalizadas de massagem terapêutica, holística e de relaxamento.</span>
+          </p>
+          <nav class="social-wrap" aria-label="Redes sociais">
+            <a href="https://www.facebook.com/profile.php?id=61572165418991"
+               class="social-btn" target="_blank" rel="noopener noreferrer"
+               aria-label="Visitar o Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/cp.centrodeterapiadobemestar/"
+               class="social-btn" target="_blank" rel="noopener noreferrer"
+               aria-label="Visitar o Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://wa.me/351939627962"
+               class="social-btn" target="_blank" rel="noopener noreferrer"
+               aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          </nav>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div class="col-lg-2 col-6">
+          <p class="footer-col-title"><span data-i18n="footer.paginas">Páginas</span></p>
+          <ul class="footer-nav" role="list">
+            <li><a href="index.html"><span data-i18n="nav.inicio">Início</span></a></li>
+            <li><a href="pages/sobre-mim.html"><span data-i18n="nav.sobre">Sobre mim</span></a></li>
+            <li><a href="pages/nosso-espaco.html"><span data-i18n="footer.o_espaco">O espaço</span></a></li>
+            <li><a href="pages/servicos.html"><span data-i18n="nav.servicos">Serviços</span></a></li>
+            <li><a href="pages/precos.html"><span data-i18n="nav.precos">Preços</span></a></li>
+            <li><a href="pages/blog.html"><span data-i18n="nav.blog">Blog</span></a></li>
+            <li><a href="pages/reservas.html"><span data-i18n="nav.reservas">Reservas</span></a></li>
+            <li><a href="pages/cartao-presente.html"><span data-i18n="nav.cartao_presente">Cartão-Presente</span></a></li>
+            <li><a href="pages/contactos.html"><span data-i18n="nav.contactos">Contactos</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Serviços -->
+        <div class="col-lg-2 col-6">
+          <p class="footer-col-title"><span data-i18n="nav.servicos">Serviços</span></p>
+          <ul class="footer-nav" role="list">
+            <li><a href="pages/servicos.html#aromaterapia"><span data-i18n="servicos_nomes.aromaterapia">Aromaterapia</span></a></li>
+            <li><a href="pages/servicos.html#miofascial"><span data-i18n="servicos_nomes.miofascial">Miofascial</span></a></li>
+            <li><a href="pages/servicos.html#ayurvedica"><span data-i18n="servicos_nomes.ayurvedica">Ayurvédica</span></a></li>
+            <li><a href="pages/servicos.html#lomi-lomi"><span data-i18n="servicos_nomes.lomilomi">Lomi-Lomi</span></a></li>
+            <li><a href="pages/servicos.html#shiatsu"><span data-i18n="servicos_nomes.shiatsu">Shiatsu</span></a></li>
+            <li><a href="pages/servicos.html#reflexologia"><span data-i18n="servicos_nomes.reflexologia">Reflexologia</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Contacto -->
+        <div class="col-lg-4">
+          <p class="footer-col-title"><span data-i18n="footer.contacto">Contacto</span></p>
+          <address class="u04">
+            <div class="footer-info">
+              <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              <span><span data-i18n="footer.morada1">Santa Maria da Feira, Aveiro</span></span>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <span><span data-i18n="footer.morada2">Esmoriz, Ovar, Aveiro</span></span>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+              <a href="https://wa.me/351939627962">+351 939 627 962</a>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+              <a href="mailto:cp.centrodeterapiadobemestar@gmail.com">cp.centrodeterapiadobemestar@gmail.com</a>
+            </div>
+            <div class="footer-info">
+              <i class="bi bi-clock-fill" aria-hidden="true"></i>
+              <span><span data-i18n="footer.horario">Seg – Sáb &nbsp;·&nbsp; 10h00 – 18h00</span></span>
+            </div>
+          </address>
+          <div class="mt-4">
+            <a class="btn-p u05" href="pages/reservas.html"
+              
+               aria-label="Reservar sessão">
+              <i class="bi bi-calendar-check me-1" aria-hidden="true"></i><span data-i18n="comum.reservar_sessao">Reservar sessão</span>
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /row colunas -->
+
+      <hr>
+
+      <!-- Copyright + Links legais RGPD -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <time datetime="2026">2026</time>
+          <span data-i18n="footer.marca">CP — Centro de Terapias e Bem-Estar</span>. <span data-i18n="footer.direitos">Todos os direitos reservados.</span>
+        </p>
+        <nav class="footer-legais" aria-label="Links legais RGPD">
+          <a href="politica-privacidade.html"><span data-i18n="cookie.politica">Política de Privacidade</span></a>
+          <a href="termos-utilizacao.html"><span data-i18n="cookie.termos">Termos de Utilização</span></a>
+          <a href="pages/contactos.html">Contactos</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════════════════
+       BOTÃO VOLTAR AO TOPO
+  ════════════════════════════════════════════════════════ -->
+  <button type="button" id="btn-topo" class="btn-topo" aria-label="Voltar ao topo da página">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ════════════════════════════════════════════════════════
+       BOTÃO WHATSAPP FLUTUANTE
+  ════════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/351939627962"
+     class="btn-wa"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar pelo WhatsApp — abre numa nova janela" data-i18n-aria="comum.whatsapp_flutuante">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- ════════════════════════════════════════════════════════
+       SCRIPTS — Bootstrap 5.3.3 + JS Global do Site
+  ════════════════════════════════════════════════════════ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n-dict.js"></script>
+  <script src="assets/js/i18n.js"></script>
+
+</body>
+</html>

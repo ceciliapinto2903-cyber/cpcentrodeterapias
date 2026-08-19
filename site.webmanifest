@@ -1,0 +1,22 @@
+{
+  "name": "CP Centro de Terapias",
+  "short_name": "CP Terapias",
+  "description": "Massagens terapêuticas, reflexologia, shiatsu, reiki e aromaterapia em Esmoriz.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5C4033",
+  "lang": "pt-PT",
+  "icons": [
+    {
+      "src": "/assets/icons/android-chrome-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/android-chrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
