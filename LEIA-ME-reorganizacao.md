@@ -53,3 +53,28 @@ Criada a pasta `downloads/` (vazia, pronta a receber PDFs/ebooks quando surgirem
 
 ## Regra a aplicar em todos os projectos futuros
 A partir de agora, esta estrutura (`assets/{css,js,images/subpastas,icons,fonts,videos}`, nomes de ficheiro em kebab-case, favicon completo + manifest, `robots.txt`/`sitemap.xml` na raiz) passa a ser o ponto de partida padrão para qualquer novo projecto ou reorganização dentro da Equipa 360º.
+
+---
+
+## Atualização — Limpeza final da raiz (v3)
+
+A pedido, a raiz do projeto ficou reduzida ao estritamente necessário:
+
+```
+/
+├── index.html            ← página principal, sempre na raiz
+├── robots.txt             ← exigido na raiz (motores de busca)
+├── sitemap.xml             ← exigido na raiz (motores de busca)
+├── site.webmanifest        ← manifest PWA/ícones
+├── favicon.ico              ← lido automaticamente pelo browser em /favicon.ico
+├── _headers                  ← configuração do Cloudflare Pages
+├── assets/                    ← todos os recursos estáticos (css, js, images, videos, icons, fonts, downloads)
+└── pages/                      ← todas as páginas secundárias, incluindo blog/
+```
+
+### O que mudou nesta fase
+- `politica-privacidade.html` e `termos-utilizacao.html` mudaram de `/` para `/pages/`. Todas as ligações internas (index, páginas de 1º e 2º nível, footer, aviso de cookies) e as `canonical`/`sitemap.xml` foram atualizadas em conformidade.
+- `downloads/` (vazia, reservada a PDFs/ebooks futuros) passou de `/` para `/assets/downloads/`, por ser um recurso estático como os restantes.
+- Verificação automática: zero ligações locais quebradas em todo o site após a mudança.
+
+Com isto, a raiz só contém ficheiros que **têm de estar** na raiz por convenção técnica (SEO, PWA, browser, hosting); tudo o resto vive dentro de `assets/` ou `pages/`.
