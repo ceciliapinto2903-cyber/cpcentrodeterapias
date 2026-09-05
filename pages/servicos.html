@@ -11,7 +11,7 @@
 
   <!-- ── SEO Principal ── -->
   <title>Serviços | CP Centro de Terapias — Massagens Terapêuticas, Holísticas e de Relaxamento</title>
-  <meta name="description" content="Descubra todos os serviços de massagem da Cecília: Aromaterapia, Shiatsu, Ayurvédica, Lomi-Lomi, Miofascial e Reflexologia.">
+  <meta name="description" content="Massagens terapêuticas para recuperação, alívio de dores e mobilidade — Miofascial, Shiatsu e Reflexologia. Também Aromaterapia, Ayurvédica e Lomi-Lomi para relaxamento profundo.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://cpterapias.pt/pages/servicos.html">
 
@@ -19,7 +19,7 @@
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://cpterapias.pt/pages/servicos.html">
   <meta property="og:title"       content="Serviços | CP Centro de Terapias — Massagens Terapêuticas, Holísticas e de Relaxamento">
-  <meta property="og:description" content="Descubra todos os serviços de massagem da Cecília: Aromaterapia, Shiatsu, Ayurvédica, Lomi-Lomi, Miofascial e Reflexologia.">
+  <meta property="og:description" content="Massagens terapêuticas para recuperação, alívio de dores e mobilidade — Miofascial, Shiatsu e Reflexologia. Também Aromaterapia, Ayurvédica e Lomi-Lomi para relaxamento profundo.">
   <meta property="og:image"       content="https://cpterapias.pt/imagens/logos/logomarca.png">
   <meta name="twitter:card"       content="summary_large_image">
 
@@ -202,14 +202,14 @@
             <button class="filtro-btn ativo" data-cat="todos">
               <i class="bi bi-grid-3x3-gap me-1"></i><span data-i18n="servicos.filtro_todos">Todos</span>
             </button>
-            <button class="filtro-btn" data-cat="relaxamento">
-              <i class="bi bi-flower1 me-1"></i><span data-i18n="servicos.filtro_relaxamento">Relaxamento</span>
-            </button>
             <button class="filtro-btn" data-cat="terapeutica">
               <i class="bi bi-heart-pulse me-1"></i><span data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
             </button>
             <button class="filtro-btn" data-cat="holistica">
               <i class="bi bi-stars me-1"></i><span data-i18n="servicos.filtro_holistica">Holística</span>
+            </button>
+            <button class="filtro-btn" data-cat="relaxamento">
+              <i class="bi bi-flower1 me-1"></i><span data-i18n="servicos.filtro_relaxamento">Relaxamento</span>
             </button>
             <button class="filtro-btn" data-cat="estetica">
               <i class="bi bi-flower2 me-1"></i><span data-i18n="servicos.filtro_estetica">Estética &amp; Cuidados Especiais</span>
@@ -248,6 +248,387 @@
 
 
         <!-- ── GRUPO: RELAXAMENTO ── -->
+        <div class="grupo-servico" data-grupo="terapeutica" id="miofascial">
+          <div class="sep-cat fade-in">
+            <div class="sep-cat-label">
+              <i class="bi bi-heart-pulse"></i><span data-i18n="servicos.grupo_terapeutica">Massagens Terapêuticas</span>
+            </div>
+          </div>
+
+          <div class="destaques-terapeutica">
+
+            <!-- Libertação Miofascial — imagem à esquerda, texto à direita -->
+            <div class="card-sv-destaque fade-in">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-lg-5">
+                  <img src="../assets/images/gallery/terapeutica1.jpg"
+                       alt="Libertação Miofascial — pressão profunda em pontos de tensão"
+                       class="card-sv-destaque-img"
+                       loading="lazy">
+                </div>
+                <div class="col-lg-7 d-flex flex-column">
+                  <div class="card-sv-destaque-corpo flex-grow-1">
+                    <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
+                    <h3 class="card-sv-titulo">Libertação Miofascial</h3>
+                    <p class="card-sv-desc">
+                      Técnica profunda que aplica pressão em pontos específicos para libertar
+                      a fáscia rígida causada por stress, esforço físico, treino ou má postura.
+                      A fáscia é a membrana que envolve músculos e órgãos — quando fica rígida,
+                      causa dores e limita o movimento. Muito procurada por desportistas em
+                      recuperação, por quem sofre de dores relacionadas com a idade ou mobilidade
+                      reduzida, e por quem passa muitas horas sentado.
+                    </p>
+                    <div class="tags-beneficio">
+                      <span class="tag-b">Recuperação desportiva</span>
+                      <span class="tag-b">Dores crónicas</span>
+                      <span class="tag-b">Mobilidade e idade</span>
+                      <span class="tag-b">Postura</span>
+                      <span class="tag-b">Apoio pós-lesão*</span>
+                    </div>
+                  </div>
+                  <!-- Rodapé do destaque: preço "a partir de" + botão reservar -->
+                  <div class="card-sv-destaque-rodape">
+                    <div class="destaque-preco-info">
+                      <div class="preco-indicativo">
+                        <a href="precos.html#miofascial" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
+                      </div>
+                    </div>
+                    <a href="reservas.html?massagem=miofascial" class="btn-reservar-sv"
+                       aria-label="Reservar Libertação Miofascial">
+                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Shiatsu — texto à esquerda, imagem à direita (layout alternado) -->
+            <div class="card-sv-destaque fade-in" id="shiatsu">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-lg-7 d-flex flex-column order-2 order-lg-1">
+                  <div class="card-sv-destaque-corpo flex-grow-1">
+                    <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
+                    <h3 class="card-sv-titulo">Shiatsu</h3>
+                    <p class="card-sv-desc">
+                      Técnica japonesa com pressão dos dedos, palmas e cotovelos em pontos de
+                      energia (meridianos), sem óleos. Promove o equilíbrio energético, alivia
+                      tensões, rigidez muscular e dores de cabeça. Realizada com roupa confortável.
+                    </p>
+                    <div class="tags-beneficio">
+                      <span class="tag-b">Ansiedade e stress</span>
+                      <span class="tag-b">Enxaquecas</span>
+                      <span class="tag-b">Rigidez muscular</span>
+                      <span class="tag-b">Equilíbrio energético</span>
+                    </div>
+                  </div>
+                  <div class="card-sv-destaque-rodape">
+                    <div class="destaque-preco-info">
+                      <div class="preco-indicativo">
+                        <a href="precos.html#shiatsu" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
+                      </div>
+                    </div>
+                    <a href="reservas.html?massagem=shiatsu" class="btn-reservar-sv"
+                       aria-label="Reservar Shiatsu">
+                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                  <img src="../assets/images/gallery/shiatsu.jpg"
+                       alt="Shiatsu — pressão nos meridianos japoneses"
+                       class="card-sv-destaque-img"
+                       loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <!-- Massagem Desportiva — texto à esquerda, imagem à direita -->
+            <div class="card-sv-destaque fade-in" id="massagem-desportiva">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-lg-7 d-flex flex-column order-2 order-lg-1">
+                  <div class="card-sv-destaque-corpo flex-grow-1">
+                    <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
+                    <h3 class="card-sv-titulo">Massagem Desportiva</h3>
+                    <p class="card-sv-desc">
+                      Técnica vigorosa e localizada, dirigida aos grupos musculares mais
+                      exigidos pela prática de exercício físico. Antes do treino, ajuda a
+                      ativar a circulação e a preparar o corpo para o esforço; depois do
+                      treino, acelera a recuperação e alivia a fadiga muscular. Indicada
+                      para quem pratica desporto com regularidade — de forma amadora ou
+                      competitiva — e para quem procura prevenir lesões e melhorar a
+                      mobilidade no dia a dia.
+                    </p>
+                    <div class="tags-beneficio">
+                      <span class="tag-b">Recuperação pós-treino</span>
+                      <span class="tag-b">Prevenção de lesões*</span>
+                      <span class="tag-b">Desportistas</span>
+                      <span class="tag-b">Fadiga muscular</span>
+                    </div>
+                  </div>
+                  <div class="card-sv-destaque-rodape">
+                    <div class="destaque-preco-info">
+                      <div class="preco-indicativo">
+                        <a href="precos.html#massagem-desportiva" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
+                      </div>
+                    </div>
+                    <a href="reservas.html?massagem=massagem-desportiva" class="btn-reservar-sv"
+                       aria-label="Reservar Massagem Desportiva">
+                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                  <img src="../assets/images/gallery/massagem-terapeutica-omoplata-v2.jpg"
+                       alt="Massagem desportiva — técnica vigorosa para recuperação muscular"
+                       class="card-sv-destaque-img"
+                       loading="lazy">
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /destaques-terapeutica -->
+
+          <div class="row g-4" style="margin-top: 0.5rem;">
+
+            <!-- Massagem para Grávidas -->
+            <div class="col-md-6 fade-in" id="massagem-gravidas">
+              <article class="card-sv">
+                <div class="card-sv-img-wrap">
+                  <img src="../assets/images/gallery/massagem-costas-detalhe.jpg"
+                       alt="Massagem para grávidas — técnica suave nas costas"
+                       class="card-sv-img" loading="lazy">
+                  <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
+                </div>
+                <div class="card-sv-corpo">
+                  <h3 class="card-sv-titulo">Massagem para Grávidas</h3>
+                  <p class="card-sv-desc">
+                    Técnica suave e adaptada a cada fase da gravidez, com posicionamento
+                    seguro e confortável. Ajuda a aliviar a tensão lombar e as pernas
+                    inchadas, e a promover um relaxamento profundo neste momento tão
+                    especial.
+                  </p>
+                  <div class="tags-beneficio">
+                    <span class="tag-b">Alívio lombar</span>
+                    <span class="tag-b">Pernas inchadas</span>
+                    <span class="tag-b">A partir do 2º trimestre*</span>
+                  </div>
+                  <div class="card-sv-rodape">
+                    <div class="preco-indicativo">
+                      <a href="precos.html#massagem-gravidas" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                    <a href="reservas.html?massagem=massagem-gravidas" class="btn-reservar-sv"
+                       aria-label="Reservar Massagem para Grávidas">
+                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Massagem Geriátrica / Terceira Idade -->
+            <div class="col-md-6 fade-in delay-1" id="massagem-idosos">
+              <article class="card-sv">
+                <div class="card-sv-img-wrap">
+                  <img src="../assets/images/gallery/massagem-terapeutica-pescoco-v2.jpg"
+                       alt="Massagem para idosos — técnica suave e adaptada"
+                       class="card-sv-img" loading="lazy">
+                  <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
+                </div>
+                <div class="card-sv-corpo">
+                  <h3 class="card-sv-titulo">Massagem para Idosos</h3>
+                  <p class="card-sv-desc">
+                    Técnica suave, com pressão ajustada às necessidades e limitações
+                    de cada pessoa. Ajuda a manter a mobilidade das articulações, alivia
+                    a rigidez muscular e proporciona uma sensação de conforto e bem-estar
+                    na terceira idade.
+                  </p>
+                  <div class="tags-beneficio">
+                    <span class="tag-b">Mobilidade articular</span>
+                    <span class="tag-b">Rigidez muscular</span>
+                    <span class="tag-b">Circulação</span>
+                  </div>
+                  <div class="card-sv-rodape">
+                    <div class="preco-indicativo">
+                      <a href="precos.html#massagem-idosos" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                    <a href="reservas.html?massagem=massagem-idosos" class="btn-reservar-sv"
+                       aria-label="Reservar Massagem para Idosos">
+                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+          <p class="u15" style="font-size:0.82rem; margin-top:0.75rem;">
+            * A massagem terapêutica é um complemento ao bem-estar e à recuperação —
+            não substitui consulta médica, fisioterapia ou qualquer tratamento clínico.
+            A massagem para grávidas é recomendada a partir do 2º trimestre, sujeita
+            a validação médica prévia.
+          </p>
+        </div><!-- /grupo terapêutica -->
+
+        <!-- ═════════════════════════════════════════
+             CATEGORIA: HOLÍSTICA
+        ═════════════════════════════════════════ -->
+        <div class="grupo-servico" data-grupo="holistica">
+          <div class="sep-cat fade-in">
+            <div class="sep-cat-label">
+              <i class="bi bi-stars"></i><span data-i18n="servicos.filtro_holistica">Holística</span>
+            </div>
+          </div>
+
+          <div class="row g-4">
+
+            <!-- Reflexologia -->
+            <div class="col-md-6 fade-in delay-1" id="reflexologia">
+              <article class="card-sv">
+                <div class="card-sv-img-wrap">
+                  <img src="../assets/images/gallery/reflexologia-sessao-3.jpg"
+                       alt="Reflexologia Podal — estimulação dos pontos reflexos nos pés"
+                       class="card-sv-img" loading="lazy">
+                  <span class="card-sv-cat c-holistica" data-i18n="servicos.filtro_holistica">Holística</span>
+                </div>
+                <div class="card-sv-corpo">
+                  <h3 class="card-sv-titulo">Reflexologia Podal</h3>
+                  <p class="card-sv-desc">
+                    Massagem terapêutica nos pés que estimula pontos reflexos correspondentes
+                    a órgãos e sistemas do corpo. Ajuda a circulação e alivia pernas cansadas ou
+                    inchadas — muito procurada por quem passa muito tempo em pé, por pessoas
+                    com mobilidade reduzida e na terceira idade, além de profundamente relaxante.
+                  </p>
+                  <div class="tags-beneficio">
+                    <span class="tag-b">Circulação</span>
+                    <span class="tag-b">Pernas cansadas</span>
+                    <span class="tag-b">Mobilidade e idade</span>
+                    <span class="tag-b">Stress</span>
+                  </div>
+                  <div class="card-sv-rodape">
+                    <div class="preco-indicativo">
+                      <a href="precos.html#reflexologia" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                    <a href="reservas.html?massagem=reflexologia" class="btn-reservar-sv"
+                       aria-label="Reservar Reflexologia Podal">
+                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Reiki -->
+            <div class="col-md-6 fade-in delay-2" id="reiki">
+              <article class="card-sv">
+                <div class="card-sv-img-wrap">
+                  <img src="../assets/images/gallery/reiki-1.jpg"
+                       alt="Reiki — terapia energética de harmonização"
+                       class="card-sv-img" loading="lazy">
+                  <span class="card-sv-cat c-holistica" data-i18n="servicos.categoria_oriental">Oriental</span>
+                </div>
+                <div class="card-sv-corpo">
+                  <h3 class="card-sv-titulo">Reiki</h3>
+                  <p class="card-sv-desc">
+                    Terapia energética de origem japonesa, realizada através
+                    da imposição de mãos, que promove relaxamento profundo e harmonização
+                    física, emocional e energética.
+                  </p>
+                  <div class="tags-beneficio">
+                    <span class="tag-b">Relaxamento</span>
+                    <span class="tag-b">Equilíbrio energético</span>
+                    <span class="tag-b">Harmonização</span>
+                  </div>
+                  <div class="card-sv-rodape">
+                    <div class="preco-indicativo">
+                      <a href="precos.html#reiki" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                    <a href="reservas.html?massagem=reiki" class="btn-reservar-sv"
+                       aria-label="Reservar Reiki">
+                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Ayurvédica -->
+            <div class="col-md-6 fade-in delay-3" id="ayurvedica">
+              <article class="card-sv">
+                <div class="card-sv-img-wrap">
+                  <img src="../assets/images/hero/massagem-ayurvedica.jpg"
+                       alt="Massagem Ayurvédica — técnica milenar indiana"
+                       class="card-sv-img" loading="lazy">
+                  <span class="card-sv-cat c-holistica" data-i18n="servicos.filtro_holistica">Holística</span>
+                </div>
+                <div class="card-sv-corpo">
+                  <h3 class="card-sv-titulo">Massagem Ayurvédica</h3>
+                  <p class="card-sv-desc">
+                    Técnica milenar indiana com óleos quentes e movimentos rítmicos
+                    para reequilibrar o corpo e a mente, restaurando a energia vital.
+                  </p>
+                  <div class="tags-beneficio">
+                    <span class="tag-b">Equilíbrio</span>
+                    <span class="tag-b">Energia vital</span>
+                    <span class="tag-b">Detox</span>
+                    <span class="tag-b">Renovação</span>
+                  </div>
+                  <div class="card-sv-rodape">
+                    <div class="preco-indicativo">
+                      <a href="precos.html#ayurvedica" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                    <a href="reservas.html?massagem=ayurvedica" class="btn-reservar-sv"
+                       aria-label="Reservar Massagem Ayurvédica">
+                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Massagem para Bebés -->
+            <div class="col-md-6 fade-in delay-1" id="massagem-bebes">
+              <article class="card-sv">
+                <div class="card-sv-img-wrap">
+                  <img src="../assets/images/gallery/sala-terapias.jpg"
+                       alt="Sala de terapias — ambiente calmo e preparado para a massagem de bebés"
+                       class="card-sv-img" loading="lazy">
+                  <span class="card-sv-cat c-holistica" data-i18n="servicos.filtro_holistica">Holística</span>
+                </div>
+                <div class="card-sv-corpo">
+                  <h3 class="card-sv-titulo">Massagem para Bebés</h3>
+                  <p class="card-sv-desc">
+                    Toque suave e rítmico, adaptado à pele e ao ritmo do bebé.
+                    Pode ajudar a acalmar, apoiar o sono e o conforto digestivo,
+                    e é também um momento de vínculo entre pais e filho. As sessões
+                    incluem orientações para poderem repetir o toque em casa.
+                  </p>
+                  <div class="tags-beneficio">
+                    <span class="tag-b">Vínculo afetivo</span>
+                    <span class="tag-b">Sono e calma</span>
+                    <span class="tag-b">Conforto digestivo*</span>
+                  </div>
+                  <div class="card-sv-rodape">
+                    <div class="preco-indicativo">
+                      <a href="precos.html#massagem-bebes" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                    <a href="reservas.html?massagem=massagem-bebes" class="btn-reservar-sv"
+                       aria-label="Reservar Massagem para Bebés">
+                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+          <p class="u15" style="font-size:0.82rem; margin-top:0.75rem;">
+            * A massagem para bebés é um momento de bem-estar e vínculo — não substitui
+            avaliação ou tratamento pediátrico.
+          </p>
+        </div><!-- /grupo holística -->
+
         <div class="grupo-servico" data-grupo="relaxamento" id="relaxamento">
           <div class="sep-cat fade-in">
             <div class="sep-cat-label">
@@ -365,218 +746,6 @@
 
 
         <!-- ── GRUPO: TERAPÊUTICA ── -->
-        <div class="grupo-servico" data-grupo="terapeutica" id="miofascial">
-          <div class="sep-cat fade-in">
-            <div class="sep-cat-label">
-              <i class="bi bi-heart-pulse"></i><span data-i18n="servicos.grupo_terapeutica">Massagens Terapêuticas</span>
-            </div>
-          </div>
-
-          <div class="destaques-terapeutica">
-
-            <!-- Libertação Miofascial — imagem à esquerda, texto à direita -->
-            <div class="card-sv-destaque fade-in">
-              <div class="row g-0 align-items-stretch">
-                <div class="col-lg-5">
-                  <img src="../assets/images/gallery/terapeutica1.jpg"
-                       alt="Libertação Miofascial — pressão profunda em pontos de tensão"
-                       class="card-sv-destaque-img"
-                       loading="lazy">
-                </div>
-                <div class="col-lg-7 d-flex flex-column">
-                  <div class="card-sv-destaque-corpo flex-grow-1">
-                    <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
-                    <h3 class="card-sv-titulo">Libertação Miofascial</h3>
-                    <p class="card-sv-desc">
-                      Técnica profunda que aplica pressão em pontos específicos para libertar
-                      a fáscia rígida causada por stress, esforço físico ou má postura.
-                      A fáscia é a membrana que envolve músculos e órgãos — quando fica rígida,
-                      causa dores e limita o movimento. Ideal para quem passa muitas horas
-                      sentado ou sofre de dores crónicas.
-                    </p>
-                    <div class="tags-beneficio">
-                      <span class="tag-b">Dores crónicas</span>
-                      <span class="tag-b">Postura</span>
-                      <span class="tag-b">Mobilidade</span>
-                      <span class="tag-b">Recuperação de lesões</span>
-                    </div>
-                  </div>
-                  <!-- Rodapé do destaque: preço "a partir de" + botão reservar -->
-                  <div class="card-sv-destaque-rodape">
-                    <div class="destaque-preco-info">
-                      <div class="preco-indicativo">
-                        <a href="precos.html#miofascial" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
-                      </div>
-                    </div>
-                    <a href="reservas.html?massagem=miofascial" class="btn-reservar-sv"
-                       aria-label="Reservar Libertação Miofascial">
-                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Shiatsu — texto à esquerda, imagem à direita (layout alternado) -->
-            <div class="card-sv-destaque fade-in" id="shiatsu">
-              <div class="row g-0 align-items-stretch">
-                <div class="col-lg-7 d-flex flex-column order-2 order-lg-1">
-                  <div class="card-sv-destaque-corpo flex-grow-1">
-                    <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
-                    <h3 class="card-sv-titulo">Shiatsu</h3>
-                    <p class="card-sv-desc">
-                      Técnica japonesa com pressão dos dedos, palmas e cotovelos em pontos de
-                      energia (meridianos), sem óleos. Promove o equilíbrio energético, alivia
-                      tensões e reforça a imunidade. Realizada com roupa confortável.
-                    </p>
-                    <div class="tags-beneficio">
-                      <span class="tag-b">Ansiedade e stress</span>
-                      <span class="tag-b">Enxaquecas</span>
-                      <span class="tag-b">Equilíbrio energético</span>
-                    </div>
-                  </div>
-                  <div class="card-sv-destaque-rodape">
-                    <div class="destaque-preco-info">
-                      <div class="preco-indicativo">
-                        <a href="precos.html#shiatsu" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
-                      </div>
-                    </div>
-                    <a href="reservas.html?massagem=shiatsu" class="btn-reservar-sv"
-                       aria-label="Reservar Shiatsu">
-                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-5 order-1 order-lg-2">
-                  <img src="../assets/images/gallery/shiatsu.jpg"
-                       alt="Shiatsu — pressão nos meridianos japoneses"
-                       class="card-sv-destaque-img"
-                       loading="lazy">
-                </div>
-              </div>
-            </div>
-
-          </div><!-- /destaques-terapeutica -->
-        </div><!-- /grupo terapêutica -->
-
-        <!-- ═════════════════════════════════════════
-             CATEGORIA: HOLÍSTICA
-        ═════════════════════════════════════════ -->
-        <div class="grupo-servico" data-grupo="holistica">
-          <div class="sep-cat fade-in">
-            <div class="sep-cat-label">
-              <i class="bi bi-stars"></i><span data-i18n="servicos.filtro_holistica">Holística</span>
-            </div>
-          </div>
-
-          <div class="row g-4">
-
-            <!-- Reflexologia -->
-            <div class="col-md-6 fade-in delay-1" id="reflexologia">
-              <article class="card-sv">
-                <div class="card-sv-img-wrap">
-                  <img src="../assets/images/gallery/reflexologia-sessao-3.jpg"
-                       alt="Reflexologia Podal — estimulação dos pontos reflexos nos pés"
-                       class="card-sv-img" loading="lazy">
-                  <span class="card-sv-cat c-holistica" data-i18n="servicos.filtro_holistica">Holística</span>
-                </div>
-                <div class="card-sv-corpo">
-                  <h3 class="card-sv-titulo">Reflexologia Podal</h3>
-                  <p class="card-sv-desc">
-                    Massagem terapêutica nos pés que estimula pontos reflexos correspondentes
-                    a órgãos e sistemas do corpo. Uma técnica precisa e profundamente relaxante —
-                    ideal para quem passa muito tempo em pé ou sofre de cansaço crónico.
-                  </p>
-                  <div class="tags-beneficio">
-                    <span class="tag-b">Órgãos internos</span>
-                    <span class="tag-b">Circulação</span>
-                    <span class="tag-b">Stress</span>
-                    <span class="tag-b">Digestão</span>
-                  </div>
-                  <div class="card-sv-rodape">
-                    <div class="preco-indicativo">
-                      <a href="precos.html#reflexologia" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                    <a href="reservas.html?massagem=reflexologia" class="btn-reservar-sv"
-                       aria-label="Reservar Reflexologia Podal">
-                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Reiki -->
-            <div class="col-md-6 fade-in delay-2" id="reiki">
-              <article class="card-sv">
-                <div class="card-sv-img-wrap">
-                  <img src="../assets/images/gallery/reiki-1.jpg"
-                       alt="Reiki — terapia energética de harmonização"
-                       class="card-sv-img" loading="lazy">
-                  <span class="card-sv-cat c-holistica" data-i18n="servicos.categoria_oriental">Oriental</span>
-                </div>
-                <div class="card-sv-corpo">
-                  <h3 class="card-sv-titulo">Reiki</h3>
-                  <p class="card-sv-desc">
-                    Terapia energética de origem japonesa, realizada através
-                    da imposição de mãos, que promove relaxamento profundo e harmonização
-                    física, emocional e energética.
-                  </p>
-                  <div class="tags-beneficio">
-                    <span class="tag-b">Relaxamento</span>
-                    <span class="tag-b">Equilíbrio energético</span>
-                    <span class="tag-b">Harmonização</span>
-                  </div>
-                  <div class="card-sv-rodape">
-                    <div class="preco-indicativo">
-                      <a href="precos.html#reiki" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                    <a href="reservas.html?massagem=reiki" class="btn-reservar-sv"
-                       aria-label="Reservar Reiki">
-                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Ayurvédica -->
-            <div class="col-md-6 fade-in delay-3" id="ayurvedica">
-              <article class="card-sv">
-                <div class="card-sv-img-wrap">
-                  <img src="../assets/images/hero/massagem-ayurvedica.jpg"
-                       alt="Massagem Ayurvédica — técnica milenar indiana"
-                       class="card-sv-img" loading="lazy">
-                  <span class="card-sv-cat c-holistica" data-i18n="servicos.filtro_holistica">Holística</span>
-                </div>
-                <div class="card-sv-corpo">
-                  <h3 class="card-sv-titulo">Massagem Ayurvédica</h3>
-                  <p class="card-sv-desc">
-                    Técnica milenar indiana com óleos quentes e movimentos rítmicos
-                    para reequilibrar o corpo e a mente, restaurando a energia vital.
-                  </p>
-                  <div class="tags-beneficio">
-                    <span class="tag-b">Equilíbrio</span>
-                    <span class="tag-b">Energia vital</span>
-                    <span class="tag-b">Detox</span>
-                    <span class="tag-b">Renovação</span>
-                  </div>
-                  <div class="card-sv-rodape">
-                    <div class="preco-indicativo">
-                      <a href="precos.html#ayurvedica" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                    <a href="reservas.html?massagem=ayurvedica" class="btn-reservar-sv"
-                       aria-label="Reservar Massagem Ayurvédica">
-                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-          </div>
-        </div><!-- /grupo holística -->
-
         <!-- ═════════════════════════════════════════
              NOVO GRUPO — ESTÉTICA & CUIDADOS ESPECIAIS
         ═════════════════════════════════════════ -->
