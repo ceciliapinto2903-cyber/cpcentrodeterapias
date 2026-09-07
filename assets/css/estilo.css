@@ -630,7 +630,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative; border-radius: var(--raio);
   overflow: hidden; height: 380px; box-shadow: var(--sombra); display: block;
 }
-.card-s-img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--transicao); }
+.card-s-img { width: 100%; height: 100%; object-fit: cover; filter: sepia(0.08); transition: transform var(--transicao); }
 .card-s-overlay {
   position: absolute; inset: 0;
   background: rgba(78,52,46,0.52);
@@ -682,12 +682,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card-sv:hover { transform: translateY(-6px); box-shadow: var(--sombra2); }
 
-.card-sv-img-wrap { height: 230px; overflow: hidden; position: relative; }
+.card-sv-img-wrap { height: 260px; overflow: hidden; position: relative; }
 .card-sv-img {
   width: 100%; height: 100%; object-fit: cover;
-  filter: sepia(0.05); transition: transform 0.55s ease;
+  filter: sepia(0.08); transition: transform 0.55s ease;
 }
 .card-sv:hover .card-sv-img { transform: scale(1.06); }
+
+/* Reenquadramento: para fotos onde o corte central corta o rosto do cliente,
+   desloca o ponto focal para baixo, mantendo espaço de respiro. */
+.img-foco-baixo { object-position: center 62%; }
 
 /* Badge de categoria sobre a imagem */
 .card-sv-cat {
@@ -725,7 +729,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-sv-corpo { padding: 22px 24px; display: flex; flex-direction: column; flex: 1; }
 .card-sv-titulo { font-family: var(--fonte-titulo); font-size: 1.3rem; font-weight: 400; color: var(--detalhe); margin-bottom: 10px; line-height: 1.22; }
-.card-sv-desc { font-size: 0.88rem; color: var(--texto-claro); line-height: 1.78; margin-bottom: 16px; }
+.card-sv-desc { font-size: 0.88rem; color: var(--texto); line-height: 1.78; margin-bottom: 16px; }
 
 /* Tags de benefícios */
 .tags-beneficio { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
@@ -733,7 +737,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--fonte-corpo); font-size: 0.62rem;
   font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase;
   padding: 4px 11px; border-radius: 50px;
-  background: rgba(141,110,99,0.09); color: var(--argila);
+  background: rgba(141,110,99,0.09); color: var(--detalhe);
   border: 1px solid rgba(141,110,99,0.16);
 }
 
@@ -752,7 +756,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .preco-valor { font-family: var(--fonte-titulo); font-size: 1.5rem; font-weight: 300; color: var(--detalhe); line-height: 1; }
 .preco-valor .euro { font-family: var(--fonte-corpo); font-size: 0.78rem; font-weight: 500; vertical-align: super; opacity: 0.65; }
-.preco-link { font-size: 0.60rem; color: var(--argila); text-decoration: underline; text-underline-offset: 2px; display: block; margin-top: 2px; transition: color 0.3s; }
+.preco-link { font-size: 0.60rem; color: var(--detalhe); text-decoration: underline; text-underline-offset: 2px; display: block; margin-top: 2px; transition: color 0.3s; }
 .preco-link:hover { color: var(--detalhe); }
 
 /* Card destaque horizontal (ex: Miofascial) */
@@ -764,7 +768,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform var(--transicao), box-shadow var(--transicao);
 }
 .card-sv-destaque:hover { transform: translateY(-4px); box-shadow: var(--sombra2); }
-.card-sv-destaque-img { width: 100%; height: 100%; min-height: 260px; object-fit: cover; filter: sepia(0.05); }
+.card-sv-destaque-img { width: 100%; height: 100%; min-height: 260px; object-fit: cover; filter: sepia(0.08); }
 .card-sv-destaque-corpo { padding: 32px 36px; }
 .card-sv-destaque-corpo .card-sv-titulo { font-size: 1.7rem; }
 .card-sv-destaque-corpo .card-sv-desc { font-size: 0.92rem; }
@@ -1003,8 +1007,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Estrutura interna real do card-preco (img + corpo) */
 .card-preco { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
-.card-preco-img-wrap { position: relative; height: 200px; overflow: hidden; }
-.card-preco-img { width: 100%; height: 100%; object-fit: cover; }
+.card-preco-img-wrap { position: relative; height: 220px; overflow: hidden; }
+.card-preco-img { width: 100%; height: 100%; object-fit: cover; filter: sepia(0.08); }
 .card-preco-cat {
   position: absolute; bottom: 14px; left: 14px;
   background: rgba(78,52,46,0.75); color: #fff;
@@ -1018,7 +1022,7 @@ h1, h2, h3, h4, h5, h6 {
 .card-preco-corpo { padding: 28px 26px 30px; display: flex; flex-direction: column; flex: 1; }
 .card-preco-nome { font-family: var(--fonte-titulo); font-size: 1.35rem; font-weight: 500; color: var(--detalhe); margin-bottom: 10px; }
 .card-preco.destaque .card-preco-nome { color: #fff; }
-.card-preco-desc { font-size: 0.87rem; color: var(--texto-claro); line-height: 1.7; margin-bottom: 20px; }
+.card-preco-desc { font-size: 0.87rem; color: var(--texto); line-height: 1.7; margin-bottom: 20px; }
 .card-preco.destaque .card-preco-desc { color: rgba(255,255,255,0.70); }
 
 /* Opções de duração/preço dentro do card */
