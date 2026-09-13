@@ -345,13 +345,7 @@
             <!-- Massagem Desportiva — texto à esquerda, imagem à direita -->
             <div class="card-sv-destaque fade-in" id="massagem-desportiva">
               <div class="row g-0 align-items-stretch">
-                <div class="col-lg-5">
-                  <img src="../assets/images/gallery/massagem-terapeutica-omoplata-v2.jpg"
-                       alt="Massagem desportiva — técnica vigorosa para recuperação muscular"
-                       class="card-sv-destaque-img"
-                       loading="lazy">
-                </div>
-                <div class="col-lg-7 d-flex flex-column">
+                <div class="col-lg-7 d-flex flex-column order-2 order-lg-1">
                   <div class="card-sv-destaque-corpo flex-grow-1">
                     <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
                     <h3 class="card-sv-titulo">Massagem Desportiva</h3>
@@ -383,33 +377,44 @@
                     </a>
                   </div>
                 </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                  <img src="../assets/images/gallery/massagem-terapeutica-omoplata-v2.jpg"
+                       alt="Massagem desportiva — técnica vigorosa para recuperação muscular"
+                       class="card-sv-destaque-img"
+                       loading="lazy">
+                </div>
               </div>
             </div>
 
-            <!-- Massagem para Grávidas — texto à esquerda, imagem à direita -->
-            <div class="card-sv-destaque fade-in" id="massagem-gravidas">
-              <div class="row g-0 align-items-stretch">
-                <div class="col-lg-7 d-flex flex-column order-2 order-lg-1">
-                  <div class="card-sv-destaque-corpo flex-grow-1">
-                    <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
-                    <h3 class="card-sv-titulo">Massagem para Grávidas</h3>
-                    <p class="card-sv-desc">
-                      Técnica suave e adaptada a cada fase da gravidez, com posicionamento
-                      seguro e confortável. Ajuda a aliviar a tensão lombar e as pernas
-                      inchadas, e a promover um relaxamento profundo neste momento tão
-                      especial.
-                    </p>
-                    <div class="tags-beneficio">
-                      <span class="tag-b">Alívio lombar</span>
-                      <span class="tag-b">Pernas inchadas</span>
-                      <span class="tag-b">A partir do 2º trimestre*</span>
-                    </div>
+          </div><!-- /destaques-terapeutica -->
+
+          <div class="row g-4" style="margin-top: 0.5rem;">
+
+            <!-- Massagem para Grávidas -->
+            <div class="col-md-6 fade-in" id="massagem-gravidas">
+              <article class="card-sv">
+                <div class="card-sv-img-wrap">
+                  <img src="../assets/images/gallery/massagem-costas-detalhe.jpg"
+                       alt="Massagem para grávidas — técnica suave nas costas"
+                       class="card-sv-img" loading="lazy">
+                  <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
+                </div>
+                <div class="card-sv-corpo">
+                  <h3 class="card-sv-titulo">Massagem para Grávidas</h3>
+                  <p class="card-sv-desc">
+                    Técnica suave e adaptada a cada fase da gravidez, com posicionamento
+                    seguro e confortável. Ajuda a aliviar a tensão lombar e as pernas
+                    inchadas, e a promover um relaxamento profundo neste momento tão
+                    especial.
+                  </p>
+                  <div class="tags-beneficio">
+                    <span class="tag-b">Alívio lombar</span>
+                    <span class="tag-b">Pernas inchadas</span>
+                    <span class="tag-b">A partir do 2º trimestre*</span>
                   </div>
-                  <div class="card-sv-destaque-rodape">
-                    <div class="destaque-preco-info">
-                      <div class="preco-indicativo">
-                        <a href="precos.html#massagem-gravidas" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
-                      </div>
+                  <div class="card-sv-rodape">
+                    <div class="preco-indicativo">
+                      <a href="precos.html#massagem-gravidas" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
                     </div>
                     <a href="reservas.html?massagem=massagem-gravidas" class="btn-reservar-sv"
                        aria-label="Reservar Massagem para Grávidas">
@@ -417,45 +422,34 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-5 order-1 order-lg-2">
-                  <img src="../assets/images/gallery/massagem-gravidas.jpg"
-                       alt="Massagem para grávidas — técnica suave nas costas, com a terapeuta a aplicar pressão ligeira"
-                       class="card-sv-destaque-img"
-                       loading="lazy">
-                </div>
-              </div>
+              </article>
             </div>
 
-            <!-- Massagem para Idosos — imagem à esquerda, texto à direita -->
-            <div class="card-sv-destaque fade-in" id="massagem-idosos">
-              <div class="row g-0 align-items-stretch">
-                <div class="col-lg-5">
-                  <img src="../assets/images/gallery/massagem-idosos.jpg"
-                       alt="Massagem para idosos — técnica suave e adaptada na terceira idade"
-                       class="card-sv-destaque-img img-foco-baixo"
-                       loading="lazy">
+            <!-- Massagem Geriátrica / Terceira Idade -->
+            <div class="col-md-6 fade-in delay-1" id="massagem-idosos">
+              <article class="card-sv">
+                <div class="card-sv-img-wrap">
+                  <img src="../assets/images/gallery/massagem-terapeutica-pescoco-v2.jpg"
+                       alt="Massagem para idosos — técnica suave e adaptada"
+                       class="card-sv-img" loading="lazy">
+                  <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
                 </div>
-                <div class="col-lg-7 d-flex flex-column">
-                  <div class="card-sv-destaque-corpo flex-grow-1">
-                    <span class="card-sv-cat c-terapeutica u56" data-i18n="servicos.filtro_terapeutica">Terapêutica</span>
-                    <h3 class="card-sv-titulo">Massagem para Idosos</h3>
-                    <p class="card-sv-desc">
-                      Técnica suave, com pressão ajustada às necessidades e limitações
-                      de cada pessoa. Ajuda a manter a mobilidade das articulações, alivia
-                      a rigidez muscular e proporciona uma sensação de conforto e bem-estar
-                      na terceira idade.
-                    </p>
-                    <div class="tags-beneficio">
-                      <span class="tag-b">Mobilidade articular</span>
-                      <span class="tag-b">Rigidez muscular</span>
-                      <span class="tag-b">Circulação</span>
-                    </div>
+                <div class="card-sv-corpo">
+                  <h3 class="card-sv-titulo">Massagem para Idosos</h3>
+                  <p class="card-sv-desc">
+                    Técnica suave, com pressão ajustada às necessidades e limitações
+                    de cada pessoa. Ajuda a manter a mobilidade das articulações, alivia
+                    a rigidez muscular e proporciona uma sensação de conforto e bem-estar
+                    na terceira idade.
+                  </p>
+                  <div class="tags-beneficio">
+                    <span class="tag-b">Mobilidade articular</span>
+                    <span class="tag-b">Rigidez muscular</span>
+                    <span class="tag-b">Circulação</span>
                   </div>
-                  <div class="card-sv-destaque-rodape">
-                    <div class="destaque-preco-info">
-                      <div class="preco-indicativo">
-                        <a href="precos.html#massagem-idosos" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
-                      </div>
+                  <div class="card-sv-rodape">
+                    <div class="preco-indicativo">
+                      <a href="precos.html#massagem-idosos" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
                     </div>
                     <a href="reservas.html?massagem=massagem-idosos" class="btn-reservar-sv"
                        aria-label="Reservar Massagem para Idosos">
@@ -463,10 +457,10 @@
                     </a>
                   </div>
                 </div>
-              </div>
+              </article>
             </div>
 
-          </div><!-- /destaques-terapeutica -->
+          </div>
 
           <p class="u15" style="font-size:0.82rem; margin-top:0.75rem;">
             * A massagem terapêutica é um complemento ao bem-estar e à recuperação —
@@ -489,7 +483,7 @@
           <div class="row g-4">
 
             <!-- Reflexologia -->
-            <div class="col-md-6 col-lg-4 fade-in delay-1" id="reflexologia">
+            <div class="col-md-6 fade-in delay-1" id="reflexologia">
               <article class="card-sv">
                 <div class="card-sv-img-wrap">
                   <img src="../assets/images/gallery/reflexologia-sessao-3.jpg"
@@ -525,7 +519,7 @@
             </div>
 
             <!-- Reiki -->
-            <div class="col-md-6 col-lg-4 fade-in delay-2" id="reiki">
+            <div class="col-md-6 fade-in delay-2" id="reiki">
               <article class="card-sv">
                 <div class="card-sv-img-wrap">
                   <img src="../assets/images/gallery/reiki-1.jpg"
@@ -559,7 +553,7 @@
             </div>
 
             <!-- Ayurvédica -->
-            <div class="col-md-6 col-lg-4 fade-in delay-3" id="ayurvedica">
+            <div class="col-md-6 fade-in delay-3" id="ayurvedica">
               <article class="card-sv">
                 <div class="card-sv-img-wrap">
                   <img src="../assets/images/hero/massagem-ayurvedica.jpg"
@@ -593,11 +587,11 @@
             </div>
 
             <!-- Massagem para Bebés -->
-            <div class="col-md-6 col-lg-4 fade-in delay-1" id="massagem-bebes">
+            <div class="col-md-6 fade-in delay-1" id="massagem-bebes">
               <article class="card-sv">
                 <div class="card-sv-img-wrap">
-                  <img src="../assets/images/gallery/massagem-bebes.jpg"
-                       alt="Massagem para bebés — toque suave nas costas do bebé"
+                  <img src="../assets/images/gallery/sala-terapias.jpg"
+                       alt="Sala de terapias — ambiente calmo e preparado para a massagem de bebés"
                        class="card-sv-img" loading="lazy">
                   <span class="card-sv-cat c-holistica" data-i18n="servicos.filtro_holistica">Holística</span>
                 </div>
@@ -620,38 +614,6 @@
                     </div>
                     <a href="reservas.html?massagem=massagem-bebes" class="btn-reservar-sv"
                        aria-label="Reservar Massagem para Bebés">
-                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Massagem em Crianças -->
-            <div class="col-md-6 col-lg-4 fade-in delay-2" id="criancas">
-              <article class="card-sv">
-                <div class="card-sv-img-wrap">
-                  <img src="../assets/images/gallery/massagem-criancas.jpg"
-                       alt="Massagem suave em criança, com a presença de um adulto responsável"
-                       class="card-sv-img" loading="lazy">
-                  <span class="card-sv-cat c-holistica" data-i18n="servicos.filtro_holistica">Holística</span>
-                </div>
-                <div class="card-sv-corpo">
-                  <h3 class="card-sv-titulo" data-i18n="servicos.criancas_titulo">Massagem em Crianças</h3>
-                  <p class="card-sv-desc" data-i18n="servicos.criancas_desc">
-                    Massagem suave e adaptada, pensada para o bem-estar dos mais novos,
-                    sempre com a presença de um adulto responsável.
-                  </p>
-                  <div class="tags-beneficio">
-                    <span class="tag-b" data-i18n="servicos.tag_suave">Suave</span>
-                    <span class="tag-b" data-i18n="servicos.tag_adaptada">Adaptada à idade</span>
-                  </div>
-                  <div class="card-sv-rodape">
-                    <div class="preco-indicativo">
-                      <a href="precos.html#criancas" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                    <a href="reservas.html?massagem=criancas" class="btn-reservar-sv"
-                       aria-label="Reservar Massagem em Crianças">
                       <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
                     </a>
                   </div>
@@ -896,6 +858,37 @@
             </div>
 
             <!-- Massagem em Crianças — sem fotografia própria ainda -->
+            <div class="col-md-6 col-lg-4 fade-in delay-3" id="criancas">
+              <article class="card-sv">
+                <div class="card-sv-img-wrap">
+                  <img src="../assets/images/gallery/massagem-criancas.jpg"
+                       alt="Massagem suave em criança, com a presença de um adulto responsável"
+                       class="card-sv-img" loading="lazy">
+                  <span class="card-sv-cat c-estetica" data-i18n="servicos.filtro_estetica">Estética &amp; Cuidados Especiais</span>
+                </div>
+                <div class="card-sv-corpo">
+                  <h3 class="card-sv-titulo" data-i18n="servicos.criancas_titulo">Massagem em Crianças</h3>
+                  <p class="card-sv-desc" data-i18n="servicos.criancas_desc">
+                    Massagem suave e adaptada, pensada para o bem-estar dos mais novos,
+                    sempre com a presença de um adulto responsável.
+                  </p>
+                  <div class="tags-beneficio">
+                    <span class="tag-b" data-i18n="servicos.tag_suave">Suave</span>
+                    <span class="tag-b" data-i18n="servicos.tag_adaptada">Adaptada à idade</span>
+                  </div>
+                  <div class="card-sv-rodape">
+                    <div class="preco-indicativo">
+                      <a href="precos.html#criancas" class="preco-link" data-i18n="servicos.ver_precos_curto">Ver preços<i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                    <a href="reservas.html?massagem=criancas" class="btn-reservar-sv"
+                       aria-label="Reservar Massagem em Crianças">
+                      <i class="bi bi-calendar-check me-1"></i><span data-i18n="servicos.reservar_curto">Reservar</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
           </div>
         </div><!-- /grupo estética -->
 
@@ -1001,7 +994,7 @@
             <a href="https://www.facebook.com/profile.php?id=61572165418991"
                class="social-btn" target="_blank" rel="noopener noreferrer"
                aria-label="Visitar o Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/cpcentrodeterapiaebemestar/"
+            <a href="https://www.instagram.com/cp.centrodeterapiadobemestar/"
                class="social-btn" target="_blank" rel="noopener noreferrer"
                aria-label="Visitar o Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
             <a href="https://wa.me/351939627962"
