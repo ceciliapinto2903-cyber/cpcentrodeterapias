@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cpterapias.pt/sitemap.xml
+Sitemap: https://cpcentrodeterapias.pt/sitemap.xml
